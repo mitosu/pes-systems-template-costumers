@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>DemoTrans | Mensajeros | Mensajerías | Courier | Transporte Urgente</title>
+        <?php include('title.php');?>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.js"></script>
@@ -34,117 +34,14 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#">DemoTrans</a>
-                </div>
-                <div class="navbar-collapse collapse">
-                    <form class="navbar-form navbar-right" role="form">
-                        <div id="text-zona-clientes" class="form-group">
-                            <label for="usuario">Zona de Clientes</label>
-                        </div>
-                        <div class="form-group">
-                            <input id="usuario" type="text" placeholder="Usuario" class="form-control" data-toggle="popover" data-placement="bottom" data-content="Para acceder al area de Clientes por favor Ingrese sus credenciales">
-                        </div>
-                        <div class="form-group">
-                            <input type="password" placeholder="Contraseña" class="form-control">
-                        </div>
-                        <button type="submit" class="btn btn-success">Entrar</button>
-                    </form>
-                </div><!--/.navbar-collapse -->
-            </div>
-        </div>
-
+        <!--customers_area-->
+        <?php include('customers_area_nav.php');?>
         <div id="contenido" class="container"><!--Contenido-->
-            <div class="row"><!--SlideShow-->
-                <div id="carousel-transport" class="carousel slide" data-ride="carousel">
-                    <!-- Indicators -->
-                    <ol class="carousel-indicators">
-                        <li data-target="#carousel-transport" data-slide-to="0" class="active"></li>
-                        <li data-target="#carousel-transport" data-slide-to="1"></li>
-                        <li data-target="#carousel-transport" data-slide-to="2"></li>
-                    </ol>
+            <!--rotador.php-->
+            <?php include('rotator.php');?>
 
-                    <!-- Wrapper for slides -->
-                    <div class="carousel-inner">
-                        <div class="item active">
-                            <img src="img/transporte.jpg" alt="transporte urgente">
-                            <div class="carousel-caption">
-                                ...
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img src="img/transporte.jpg" alt="transporte urgente">
-                            <div class="carousel-caption">
-                                ...
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img src="img/transporte.jpg" alt="transporte urgente">
-                            <div class="carousel-caption">
-                                ...
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Controls -->
-                    <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left"></span>
-                    </a>
-                    <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right"></span>
-                    </a>
-                </div>
-            </div><!--End SlideShow-->
-
-            <!--Menu Superior-->
-            <nav class="navbar navbar-default" role="navigation">
-                <div id="menu-superior" class="container-fluid">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-home"></span></a>
-                    </div>
-
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav">
-                            <li class="active"><a href="#">Empresa</a></li>
-                            <li><a href="#">Localización</a></li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Servicios <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">Paquetería</a></li>
-                                    <li><a href="#">Paletería</a></li>
-                                    <li class="divider"></li>
-                                    <li><a href="#">Grupaje</a></li>
-                                    <li><a href="#">Carga Completa</a></li>
-                                    <li class="divider"></li>
-                                    <li><a href="#">Logística</a></li>
-                                    <li><a href="#">Local</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Trabajar</a></li>
-                            <li><a href="#">Información</a></li>
-                            <li><a href="#">Clientes</a></li>
-                        </ul>
-
-
-                    </div><!-- /.navbar-collapse -->
-                </div><!-- /.container-fluid -->
-            </nav>
-            <!--EndMenu-->
+            <!--top menu-->
+            <?php include('top_menu.php');?>
 
             <!--Cotenido Cuerpo-->
             <div class="row">
@@ -199,10 +96,16 @@
             <hr>
 
             <footer>
-                <div class="row">
-                    <div class="col-md-4">Footer 1</div>
-                    <div class="col-md-4">Footer 2</div>
-                    <div class="col-md-4">Footer 3</div>
+                <!--Menu Bottom-->
+                <?php include ('menu_bottom.php');?>
+                <!--Footer Content-->
+                <div id="footer_web" class="row">
+                    <!--Copyright-->
+                    <?php include ('footer_copyright_iz.php');?>
+                    <!--info-->
+                    <?php include ('info_footer_center.php');?>
+                    <!--Legal-->
+                    <?php include ('legal_info_footer_right.php');?>
                 </div>
             </footer>
             <!--</div>--> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.js"></script>
