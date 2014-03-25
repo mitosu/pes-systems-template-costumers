@@ -199,7 +199,11 @@
             <hr>
 
             <footer>
-                <p>&copy; Company 2014</p>
+                <div class="row">
+                    <div class="col-md-4">Footer 1</div>
+                    <div class="col-md-4">Footer 2</div>
+                    <div class="col-md-4">Footer 3</div>
+                </div>
             </footer>
             <!--</div>--> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.js"></script>
             <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.js"><\/script>')</script>
