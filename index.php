@@ -9,7 +9,7 @@
         <title>DemoTrans | Mensajeros | Mensajerías | Courier | Transporte Urgente</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.js"></script>
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/stylepage.css">
         <style>
@@ -22,6 +22,13 @@
         <link rel="stylesheet" href="css/main.css">
 
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('#zona_cliente').click(function(){
+                    $('#usuario').popover('show');
+                });
+            });        
+        </script>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -44,7 +51,7 @@
                             <label for="usuario">Zona de Clientes</label>
                         </div>
                         <div class="form-group">
-                            <input id="usuario" type="text" placeholder="Usuario" class="form-control">
+                            <input id="usuario" type="text" placeholder="Usuario" class="form-control" data-toggle="popover" data-placement="bottom" data-content="Para acceder al area de Clientes por favor Ingrese sus credenciales">
                         </div>
                         <div class="form-group">
                             <input type="password" placeholder="Contraseña" class="form-control">
@@ -150,7 +157,7 @@
                     <h2>
                         <img src="img/destinos.gif" alt="Destinos">
                     </h2>
-                    <p>Mapa </p>
+                    <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6240307.829081928!2d-3.7130000000000543!3d40.20849999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc42e3783261bc8b%3A0xa6ec2c940768a3ec!2zRXNwYcOxYQ!5e0!3m2!1ses!2ses!4v1395758182089" width="260" height="250" frameborder="0" style="border:0"></iframe></p>
                 </div>
             </div>
 
@@ -171,7 +178,7 @@
                 </div>
                 <div class="col-md-4">
                     <h2>
-                        <span class="label label-success"> Zona de Clientes <span class="glyphicon glyphicon-log-in"></span> </span>
+                        <span id="zona_cliente" class="label label-success"> Zona de Clientes <span class="glyphicon glyphicon-log-in"></span> </span>
                     </h2>
                     <p>En esta web nuestros clientes pueden encargar recogidas, comprobar el estado de los mismos y consultar facturas pinchando aqui Zona Clientes. Si es
                         cliente y no tiene clave de acceso
@@ -184,7 +191,7 @@
                     </h2>
                     <p>Pinche aqui si quiere ponerse en contacto con nosotros por e-mail info@demotrans.es.<br/>
                         Para contactar por telefono Tel:  91 123 45 67 nuestro horario de oficina es de 09h00 a 19h00 de lunes a viernes. Fax 91 123 45 68  </p>
-                    <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+                    <p><a class="btn btn-default" href="#" role="button">Contactenos &raquo;</a></p>
                 </div>
 
             </div>
