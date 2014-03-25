@@ -56,7 +56,7 @@
         </div>
 
         <div id="contenido" class="container"><!--Contenido-->
-            <div class="row">                <!--SlideShow-->
+            <div class="row"><!--SlideShow-->
                 <div id="carousel-transport" class="carousel slide" data-ride="carousel">
                     <!-- Indicators -->
                     <ol class="carousel-indicators">
@@ -95,20 +95,50 @@
                         <span class="glyphicon glyphicon-chevron-right"></span>
                     </a>
                 </div>
-            </div>        <!--End SlideShow-->
+            </div><!--End SlideShow-->
 
-            <!-- Main jumbotron for a primary marketing message or call to action 
-            <div class="jumbotron">
-              <div class="container">
-                <h1>Hello, world!</h1>
-                <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-                <p><a class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p>
-              </div>
-            </div>
-            -->
+            <!--Menu Superior-->
+            <nav class="navbar navbar-default" role="navigation">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">Inicio</a>
+                    </div>
 
-            <!--<div class="container">-->
-            <!-- Example row of columns -->
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#">Empresa</a></li>
+                            <li><a href="#">Localización</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Servicios <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Paquetería</a></li>
+                                    <li><a href="#">Paletería</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Grupaje</a></li>
+                                    <li><a href="#">Carga Completa</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Logística</a></li>
+                                    <li><a href="#">Local</a></li>
+                                </ul>
+                            </li>
+                             <li><a href="#">Trabajar</a></li>
+                             <li><a href="#">Información</a></li>
+                             <li><a href="#">Clientes</a></li>
+                        </ul>
+
+                       
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+            <!--EndMenu-->
+
             <div class="row">
                 <div class="col-md-4">
                     <h2>Heading</h2>
