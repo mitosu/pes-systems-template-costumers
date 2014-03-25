@@ -1,0 +1,21 @@
+
+/* 
+    Created on : 24-mar-2014, 20:59:50
+    Author     : Mitosu
+    Name: Miguel Angel Torres 
+*/
+
+body{
+    background-color: #363636;
+}
+
+#contenido{
+    background-color: #ffffff;
+    max-width: 980px;
+}
+
+#text-zona-clientes{
+    color: #7EB7FE;
+    font-family: serif;
+    font-size: large;
+}
