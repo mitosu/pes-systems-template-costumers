@@ -128,33 +128,65 @@
                                     <li><a href="#">Local</a></li>
                                 </ul>
                             </li>
-                             <li><a href="#">Trabajar</a></li>
-                             <li><a href="#">Información</a></li>
-                             <li><a href="#">Clientes</a></li>
+                            <li><a href="#">Trabajar</a></li>
+                            <li><a href="#">Información</a></li>
+                            <li><a href="#">Clientes</a></li>
                         </ul>
 
-                       
+
                     </div><!-- /.navbar-collapse -->
                 </div><!-- /.container-fluid -->
             </nav>
             <!--EndMenu-->
 
+            <!--Cotenido Cuerpo-->
+            <div class="row">
+                <div class="col-md-8">
+                    <h2><img src="img/mensajeriaurgente.gif" alt="Mensajeria Urgente"></h2>
+                    <p><img src="img/2_p4.jpg" alt="Mensajeria rapida" class="image_aling_text img-rounded">En todos nuestros servicios DemoTrans, S.L. busca cumplir un objetivo, proporcionar un servicio de entrega de documentos y paquetería con la mayor rapidez y la mayor seguridad. Para ofrecer este servicio contamos con un equipo especializado y exclusivo, que además cuenta para su localización y seguimiento con la tecnología más avanzada del mercado. Por ello, sus documentos o paquetes están constantemente controlados pudiendo así dar un servicio puntual y sin ningún tipo de riesgos.  </p>
+                    <p><a class="btn btn-default" href="#" role="button">Más información &raquo;</a></p>
+                </div>
+                <div class="col-md-4">
+                    <h2>
+                        <img src="img/destinos.gif" alt="Destinos">
+                    </h2>
+                    <p>Mapa </p>
+                </div>
+            </div>
+
+            <!--SubContenido-->
             <div class="row">
                 <div class="col-md-4">
-                    <h2>Heading</h2>
-                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                    <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+                    <h2><img src="img/servicios.gif" alt="Servicios"></h2>
+                    <ul>
+                        <li><a href="moto.php"><span class="label label-primary">Servicio de moto</span></a></li>
+                        <li><a href="furgo.php"><span class="label label-primary">Servicio de furgoneta</span></a></li>
+                        <li><a href="nacional.php"><span class="label label-primary">Servicio de Nacional</span></a></li>
+                        <li><a href="insular.php"><span class="label label-primary">Servicio de Insular</span></a></li>
+                        <li><a href="carga.php"><span class="label label-primary">Servicio de Carga</span></a></li>
+                        <li><a href="internacional.php"><span class="label label-primary">Servicio de Internacional</span></a></li>
+                        <li><a href="almacenaje.php"><span class="label label-primary">Almacenaje</span></a></li>
+                    </ul>
+                    <a class="btn btn-default" href="#" role="button">Condiciones &raquo;</a>
                 </div>
                 <div class="col-md-4">
-                    <h2>Heading</h2>
-                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                    <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+                    <h2>
+                        <span class="label label-success"> Zona de Clientes <span class="glyphicon glyphicon-log-in"></span> </span>
+                    </h2>
+                    <p>En esta web nuestros clientes pueden encargar recogidas, comprobar el estado de los mismos y consultar facturas pinchando aqui Zona Clientes. Si es
+                        cliente y no tiene clave de acceso
+                        llamenos al Tel. 91 123 45 67 </p>
+                    <p><a class="btn btn-default" href="#" role="button">Petición de claves por e-mail &raquo;</a></p>
                 </div>
                 <div class="col-md-4">
-                    <h2>Heading</h2>
-                    <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                    <h2>
+                        <img src="img/contactar.gif" alt="Contactenos">
+                    </h2>
+                    <p>Pinche aqui si quiere ponerse en contacto con nosotros por e-mail info@demotrans.es.<br/>
+                        Para contactar por telefono Tel:  91 123 45 67 nuestro horario de oficina es de 09h00 a 19h00 de lunes a viernes. Fax 91 123 45 68  </p>
                     <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
                 </div>
+
             </div>
 
             <hr>

@@ -19,3 +19,16 @@ body{
     font-family: serif;
     font-size: large;
 }
+
+.image_aling_text{
+    float: left;
+    margin-right: 5px;
+}
+
+.col-md-8 p{
+    text-align: justify;
+}
+
+.col-md-4 p{
+    text-align: justify;
+}
