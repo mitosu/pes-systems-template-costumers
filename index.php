@@ -46,7 +46,7 @@
             <!--Cotenido Cuerpo-->
             <div class="row">
                 <div class="col-md-9">
-                            <h2><img src="img/mensajeriaurgente.gif" alt="Mensajeria Urgente"></h2>
+                            <h2> <span class="label label-primary"> Mensajería Urgente</span></h2>
                             <p><img src="img/2_p4.jpg" alt="Mensajeria rapida" class="image_aling_text img-rounded">En todos nuestros servicios DemoTrans, S.L. busca cumplir un objetivo, proporcionar un servicio de entrega de documentos y paquetería con la mayor rapidez y la mayor seguridad. Para ofrecer este servicio contamos con un equipo especializado y exclusivo, que además cuenta para su localización y seguimiento con la tecnología más avanzada del mercado. Por ello, sus documentos o paquetes están constantemente controlados pudiendo así dar un servicio puntual y sin ningún tipo de riesgos.  </p>
                             <p><a href="#">Más información &raquo;</a></p>
                     <div class="imagen_home row">
@@ -80,22 +80,24 @@
 
             <!--SubContenido-->
             <div class="row">
-                <div class="col-md-4">
-                    <h2><img src="img/servicios.gif" alt="Servicios"></h2>
-                    <ul>
-                        <li><a href="moto.php"><span class="label label-primary">Servicio de moto</span></a></li>
-                        <li><a href="furgo.php"><span class="label label-primary">Servicio de furgoneta</span></a></li>
-                        <li><a href="nacional.php"><span class="label label-primary">Servicio de Nacional</span></a></li>
-                        <li><a href="insular.php"><span class="label label-primary">Servicio de Insular</span></a></li>
-                        <li><a href="carga.php"><span class="label label-primary">Servicio de Carga</span></a></li>
-                        <li><a href="internacional.php"><span class="label label-primary">Servicio de Internacional</span></a></li>
-                        <li><a href="almacenaje.php"><span class="label label-primary">Almacenaje</span></a></li>
-                    </ul>
-                    <a href="#">Condiciones &raquo;</a>
+                <div class="col-md-3">
+                    <h2></h2>
+                       <div class="list-group">
+                        <a href="#" class="list-group-item active">
+                            <h5><span class="titulo_menu_destinos">Servicios</span></h5>
+                        </a>
+                        <a href="#" class="list-group-item">Servicio de moto</a>
+                        <a href="#" class="list-group-item">Servicio de furgoneta</a>
+                        <a href="#" class="list-group-item">Servicio Nacional</a>
+                        <a href="#" class="list-group-item">Servicio Insular</a>
+                        <a href="#" class="list-group-item">Servicio de Carga</a>
+                        <a href="#" class="list-group-item">Servicio de Almacenaje</a>
+                    </div>
+                    <p><a href="#" >Condiciones &raquo;</a></p>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-5">
                     <h2>
-                        <span id="zona_cliente" class="label label-success"> Zona de Clientes <span class="glyphicon glyphicon-log-in"></span> </span>
+                        <span id="zona_cliente" class="label label-primary"> Zona de Clientes <span class="glyphicon glyphicon-log-in"></span></span>
                     </h2>
                     <p>En esta web nuestros clientes pueden encargar recogidas, comprobar el estado de los mismos y consultar facturas pinchando aqui Zona Clientes. Si es
                         cliente y no tiene clave de acceso
@@ -104,13 +106,12 @@
                 </div>
                 <div class="col-md-4">
                     <h2>
-                        <img src="img/contactar.gif" alt="Contactenos">
+                        <span class="label label-primary">Contactar</span>
                     </h2>
                     <p>Pinche aqui si quiere ponerse en contacto con nosotros por e-mail info@demotrans.es.<br/>
                         Para contactar por telefono Tel:  91 123 45 67 nuestro horario de oficina es de 09h00 a 19h00 de lunes a viernes. Fax 91 123 45 68  </p>
                     <p><a href="#" >Contactenos &raquo;</a></p>
                 </div>
-
             </div>
 
             <hr>
