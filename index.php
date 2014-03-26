@@ -45,25 +45,27 @@
 
             <!--Cotenido Cuerpo-->
             <div class="row">
-                <div class="col-md-8">
-                    <h2><img src="img/mensajeriaurgente.gif" alt="Mensajeria Urgente"></h2>
-                    <p><img src="img/2_p4.jpg" alt="Mensajeria rapida" class="image_aling_text img-rounded">En todos nuestros servicios DemoTrans, S.L. busca cumplir un objetivo, proporcionar un servicio de entrega de documentos y paquetería con la mayor rapidez y la mayor seguridad. Para ofrecer este servicio contamos con un equipo especializado y exclusivo, que además cuenta para su localización y seguimiento con la tecnología más avanzada del mercado. Por ello, sus documentos o paquetes están constantemente controlados pudiendo así dar un servicio puntual y sin ningún tipo de riesgos.  </p>
-                    <p><a class="btn btn-default" href="#" role="button">Más información &raquo;</a></p>
+                <div class="col-md-9">
+                            <h2><img src="img/mensajeriaurgente.gif" alt="Mensajeria Urgente"></h2>
+                            <p><img src="img/2_p4.jpg" alt="Mensajeria rapida" class="image_aling_text img-rounded">En todos nuestros servicios DemoTrans, S.L. busca cumplir un objetivo, proporcionar un servicio de entrega de documentos y paquetería con la mayor rapidez y la mayor seguridad. Para ofrecer este servicio contamos con un equipo especializado y exclusivo, que además cuenta para su localización y seguimiento con la tecnología más avanzada del mercado. Por ello, sus documentos o paquetes están constantemente controlados pudiendo así dar un servicio puntual y sin ningún tipo de riesgos.  </p>
+                            <p><a href="#">Más información &raquo;</a></p>
                     <div class="imagen_home row">
                         <div class="col-md-4">Servicio Marítimo<img src="img/servicios_img_home/aereo.jpg" alt="serivicio aereo"></div>
                         <div class="col-md-4">Servicio Aereo<img src="img/servicios_img_home/aereo.jpg" alt="serivicio aereo"></div>
                         <div class="col-md-4">Servicio Terrestre<img src="img/servicios_img_home/aereo.jpg" alt="serivicio aereo"></div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <h2>
-                        <img src="img/destinos.gif" alt="Destinos">
-                    </h2>
-                    <ul class="nav nav-pills nav-stacked">
-                        <li class="active"><a href="#">Home</a></li>
-                        <li><a href="#">Profile</a></li>
-                        <li><a href="#">Messages</a></li>
-                    </ul>
+                <div class="col-md-3">
+                    <div class="list-group">
+                        <a href="#" class="list-group-item active">
+                            <h5><span class="titulo_menu_destinos">Destinos</span></h5>
+                        </a>
+                        <a href="#" class="list-group-item">Local</a>
+                        <a href="#" class="list-group-item">Regional</a>
+                        <a href="#" class="list-group-item">Provincial</a>
+                        <a href="#" class="list-group-item">Peninsular</a>
+                        <a href="#" class="list-group-item">Insular</a>
+                    </div>
                 </div>
             </div>
 
@@ -80,7 +82,7 @@
                         <li><a href="internacional.php"><span class="label label-primary">Servicio de Internacional</span></a></li>
                         <li><a href="almacenaje.php"><span class="label label-primary">Almacenaje</span></a></li>
                     </ul>
-                    <a class="btn btn-default" href="#" role="button">Condiciones &raquo;</a>
+                    <a href="#">Condiciones &raquo;</a>
                 </div>
                 <div class="col-md-4">
                     <h2>
@@ -97,7 +99,7 @@
                     </h2>
                     <p>Pinche aqui si quiere ponerse en contacto con nosotros por e-mail info@demotrans.es.<br/>
                         Para contactar por telefono Tel:  91 123 45 67 nuestro horario de oficina es de 09h00 a 19h00 de lunes a viernes. Fax 91 123 45 68  </p>
-                    <p><a class="btn btn-default" href="#" role="button">Contactenos &raquo;</a></p>
+                    <p><a href="#" >Contactenos &raquo;</a></p>
                 </div>
 
             </div>
