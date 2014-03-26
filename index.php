@@ -58,7 +58,7 @@
                 <div class="col-md-3">
                     <div class="list-group">
                         <a href="#" class="list-group-item active">
-                            <h5><span class="titulo_menu_destinos">Destinos</span></h5>
+                            <h5><span class="titulo_menu_destinos">Nuestros destinos en :</span></h5>
                         </a>
                         <a href="#" class="list-group-item">Local</a>
                         <a href="#" class="list-group-item">Regional</a>
@@ -66,6 +66,15 @@
                         <a href="#" class="list-group-item">Peninsular</a>
                         <a href="#" class="list-group-item">Insular</a>
                     </div>
+                    <form>
+                        <span class="boletin label label-info">Boletín de Noticias</span>
+                        <div class="input-group">
+                            <span class="input-group-addon">@</span>
+                            <input type="text" class="form-control" placeholder="Correo">
+                        </div>
+                        <br/>
+                        <button type="submit" class="btn btn-default">Subscribirme !</button>
+                    </form>
                 </div>
             </div>
 

@@ -25,7 +25,11 @@ echo '<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
                             <input id="usuario" type="text" placeholder="Usuario" class="form-control" data-toggle="popover" data-placement="bottom" data-content="Para acceder al area de Clientes por favor Ingrese sus credenciales">
                         </div>
                         <div class="form-group">
-                            <input type="password" placeholder="Contraseña" class="form-control">
+                           <div class="input-group">
+                                <span class="input-group-addon glyphicon glyphicon-eye-open"></span>
+                                <input type="password" class="form-control" placeholder="Contraseña">
+                            </div>
+
                         </div>
                         <button type="submit" class="btn btn-success">Entrar</button>
                     </form>
