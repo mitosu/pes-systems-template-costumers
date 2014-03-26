@@ -16,7 +16,7 @@ echo '<div class="col-md-3">
                         </dl>
                         <hr>
                         <dl>
-                            <dt>Inicidencias: </dt>
+                            <h4>Inicidencias</h4>
                             <dd>900-888-999</dd>
                             <dd>900-000-000 (ES)</dd>
                             <dd>support@pes-systems.com</dd>
