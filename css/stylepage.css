@@ -8,7 +8,7 @@
 body{
     background-color: #363636;
     font-family: Tahoma;
-    font-size: 11px;
+    font-size: 12px;
 }
 
 #contenido{
@@ -52,4 +52,9 @@ body{
 .redes_sociales img{
     width: 30px;
     height: 30px;
+}
+
+.servicios_img{
+    font-family: Tahoma;
+    font-size: 12px;
 }
