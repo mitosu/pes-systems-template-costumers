@@ -7,7 +7,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <?php include('title.php');?>
-        <meta name="description" content="">
+        <meta name="keywords" content="transporte madrid, empresa transporte madrid, mensajeria madrid ">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.js"></script>
         <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -59,7 +59,11 @@
                     <h2>
                         <img src="img/destinos.gif" alt="Destinos">
                     </h2>
-                    <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6240307.829081928!2d-3.7130000000000543!3d40.20849999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc42e3783261bc8b%3A0xa6ec2c940768a3ec!2zRXNwYcOxYQ!5e0!3m2!1ses!2ses!4v1395758182089" width="260" height="250" frameborder="0" style="border:0"></iframe></p>
+                    <ul class="nav nav-pills nav-stacked">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#">Profile</a></li>
+                        <li><a href="#">Messages</a></li>
+                    </ul>
                 </div>
             </div>
 
