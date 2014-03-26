@@ -6,7 +6,7 @@
     Name: Miguel Angel Torres 
  */
 
-echo '<div class="col-md-4">
+echo '<div class="col-md-3">
                         <h4>Help Desk</h4>
                         <dl>
                             <dt>Ventas y Soporte al Cliente: </dt>

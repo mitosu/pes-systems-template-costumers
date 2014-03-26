@@ -1,17 +1,26 @@
 <?php
 
 /* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+    Created on : 24-mar-2014, 20:59:50
+    Author     : Mitosu
+    Name: Miguel Angel Torres 
  */
 
-echo '<div class="col-md-4">
-                         <h4>Información</h4>
+echo '<div class="links_footer col-md-3">
+                         <h4>¿Necesitas ayuda?</h4>
                         <dl>
-                            <dt>Legal </dt>
-                            <dd>Términos de uso de la página web</dd>
-                            <dd>Términos de Licencia</dd>
-                            <dd>Política de privacidad</dd>
+                            <dd>Asistencia telefónica: +34 91 000 000</dd>
+                            <dd>Soporte en Español 1 800 000 0000</dd>
+                            <hr>
+                            <dt><a href="preguntas_frecuentes.php">Preguntas frecuentes</a></dt>
+                            <dt><a href="sitemap.php">Mapa del sitio</dt>
+                            <dt><a href="contacto.php">Ponte en contacto con nosotros</dt>
+                            <hr>
+                            <div class="redes_sociales">
+                            <dt>Siguenos:<a href="http://www.facebook.es">  <img src="img/redes_sociales/icono_facebook.png" alt=""></a>
+                                                  <a href="http://www.twitter.es">  <img src="img/redes_sociales/twitter_icon.png" alt=""></a>
+                                                  <a href="http://www.google.es">  <img src="img/redes_sociales/social_google_box.png" alt=""></a>
+                            </dt>
+                            </div>
                         </dl>
                     </div>';

@@ -100,8 +100,10 @@
                 <?php include ('menu_bottom.php');?>
                 <!--Footer Content-->
                 <div id="footer_web" class="row">
+                    <!--Empresa-->
+                    <?php include ('empresa_footer.php');?>
                     <!--Copyright-->
-                    <?php include ('footer_copyright_iz.php');?>
+                    <?php include ('servicios_footer.php');?>
                     <!--info-->
                     <?php include ('info_footer_center.php');?>
                     <!--Legal-->
