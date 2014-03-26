@@ -5,7 +5,7 @@
     Name: Miguel Angel Torres 
  */
 
-echo '<nav class="navbar navbar-default" role="navigation">
+echo '<nav class="menu_top navbar navbar-default" role="navigation">
                 <div id="menu-superior" class="container-fluid">
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">

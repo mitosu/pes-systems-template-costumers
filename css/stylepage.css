@@ -22,6 +22,11 @@ body{
     font-size: large;
 }
 
+.menu_top{
+    font-family: Tahoma;
+    font-size: 12px;
+}
+
 .image_aling_text{
     float: left;
     margin-right: 5px;
