@@ -14,7 +14,7 @@ echo '<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">DemoTrans</a>
+                    <a class="navbar-brand" href="#">'._EMP_EMPRESA.'</a>
                 </div>
                 <div class="navbar-collapse collapse">
                     <form class="navbar-form navbar-right" role="form">
