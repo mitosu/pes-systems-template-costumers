@@ -7,18 +7,16 @@
  */
 
 echo '<div class="col-md-3">
-                        <h4>Help Desk</h4>
+                        <h4>Departamento Comercial</h4>
                         <dl>
-                            <dt>Ventas y Soporte al Cliente: </dt>
-                            <dd>900-888-999</dd>
-                            <dd>900-000-000 (ES)</dd>
-                            <dd>support@pes-systems.com</dd>
+                            <dt>Ventas</dt>
+                            <dd>'._TEL_COMERCIAL.'</dd>
+                            <dd>'._EMAIL_COMERCIAL.'</dd>
                         </dl>
                         <hr>
                         <dl>
-                            <h4>Inicidencias</h4>
-                            <dd>900-888-999</dd>
-                            <dd>900-000-000 (ES)</dd>
-                            <dd>support@pes-systems.com</dd>
+                            <h4>Recogidas y Servicio al Cliente</h4>
+                            <dd>'._TEL_RECOGIDAS.'</dd>
+                            <dd>'._EMAIL_RECOGIDAS.'</dd>
                         </dl>
                     </div>';

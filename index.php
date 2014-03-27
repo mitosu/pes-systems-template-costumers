@@ -51,7 +51,7 @@
                 </div>
                 <div class="col-md-3">
                     <!--Our locations-->
-                    <?php include ('nuestros_destinos.php');?>
+                    <?php include ('destinos.php');?>
                     <!--Newsletters-->
                     <?php include ('newsletter.php');?>
                 </div>
@@ -61,7 +61,7 @@
             <div class="row">
                 <div class="col-md-3">
                     <!--Services menu-->
-                    <?php include ('servicios_menu.php');?>
+                    <?php include ('tiposservicios.php');?>
                 </div>
                 <div class="col-md-5">
                     <h2>
