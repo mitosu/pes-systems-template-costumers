@@ -6,15 +6,16 @@
  */
 
 echo '<div class="row">
-                    <div class="col-md-3"></div>
-                    <div id="menu_bottom" class="col-md-6">
+                    <div class="col-md-2"></div>
+                    <div id="menu_bottom" class="col-md-8">
                         <ul class="nav nav-tabs">
-                            <li><a href="#">Empresa</a></li>
-                            <li><a href="#">Localización</a></li>
-                            <li><a href="#">Servicios</a></li>
-                            <li><a href="#">Clientes</a></li>
+                            <li><a href="info.php">Contactenos</a></li>
+                            <li><a href="legal.php">Aviso Legal</a></li>
+                            <li><a href="condiciones.php">Condiciones</a></li>
+                            <li><a href="lortad.php">Protección de Datos</a></li>
+                            <li><a href="info.php">Más información</a></li>
                         </ul>
                     </div>
-                    <div class="col-md-3"></div>
+                    <div class="col-md-2"></div>
                 </div>';
 

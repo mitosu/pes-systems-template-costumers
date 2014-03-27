@@ -46,54 +46,22 @@
             <!--Cotenido Cuerpo-->
             <div class="row">
                 <div class="col-md-9">
-                            <h2> <span class="label label-primary"> Mensajería Urgente</span></h2>
-                            <p><img src="img/2_p4.jpg" alt="Mensajeria rapida" class="image_aling_text img-rounded">En todos nuestros servicios DemoTrans, S.L. busca cumplir un objetivo, proporcionar un servicio de entrega de documentos y paquetería con la mayor rapidez y la mayor seguridad. Para ofrecer este servicio contamos con un equipo especializado y exclusivo, que además cuenta para su localización y seguimiento con la tecnología más avanzada del mercado. Por ello, sus documentos o paquetes están constantemente controlados pudiendo así dar un servicio puntual y sin ningún tipo de riesgos.  </p>
-                            <p><a href="#">Más información &raquo;</a></p>
-                    <div class="imagen_home row">
-                        <div class="col-md-4">Servicio Marítimo<img src="img/servicios_img_home/aereo.jpg" alt="serivicio aereo"></div>
-                        <div class="col-md-4">Servicio Aereo<img src="img/servicios_img_home/aereo.jpg" alt="serivicio aereo"></div>
-                        <div class="col-md-4">Servicio Terrestre<img src="img/servicios_img_home/aereo.jpg" alt="serivicio aereo"></div>
-                    </div>
+                    <!--Urgent courier-->
+                    <?php include ('mensajeria_urgente.php');?>
                 </div>
                 <div class="col-md-3">
-                    <div class="list-group">
-                        <a href="#" class="list-group-item active">
-                            <h5><span class="titulo_menu_destinos">Nuestros destinos en :</span></h5>
-                        </a>
-                        <a href="#" class="list-group-item">Local</a>
-                        <a href="#" class="list-group-item">Regional</a>
-                        <a href="#" class="list-group-item">Provincial</a>
-                        <a href="#" class="list-group-item">Peninsular</a>
-                        <a href="#" class="list-group-item">Insular</a>
-                    </div>
-                    <form>
-                        <span class="boletin label label-info">Boletín de Noticias</span>
-                        <div class="input-group">
-                            <span class="input-group-addon">@</span>
-                            <input type="text" class="form-control" placeholder="Correo">
-                        </div>
-                        <br/>
-                        <button type="submit" class="btn btn-default">Subscribirme !</button>
-                    </form>
+                    <!--Our locations-->
+                    <?php include ('nuestros_destinos.php');?>
+                    <!--Newsletters-->
+                    <?php include ('newsletter.php');?>
                 </div>
             </div>
 
             <!--SubContenido-->
             <div class="row">
                 <div class="col-md-3">
-                    <h2></h2>
-                       <div class="list-group">
-                        <a href="#" class="list-group-item active">
-                            <h5><span class="titulo_menu_destinos">Servicios</span></h5>
-                        </a>
-                        <a href="#" class="list-group-item">Servicio de moto</a>
-                        <a href="#" class="list-group-item">Servicio de furgoneta</a>
-                        <a href="#" class="list-group-item">Servicio Nacional</a>
-                        <a href="#" class="list-group-item">Servicio Insular</a>
-                        <a href="#" class="list-group-item">Servicio de Carga</a>
-                        <a href="#" class="list-group-item">Servicio de Almacenaje</a>
-                    </div>
-                    <p><a href="#" >Condiciones &raquo;</a></p>
+                    <!--Services menu-->
+                    <?php include ('servicios_menu.php');?>
                 </div>
                 <div class="col-md-5">
                     <h2>
@@ -102,7 +70,7 @@
                     <p>En esta web nuestros clientes pueden encargar recogidas, comprobar el estado de los mismos y consultar facturas pinchando aqui Zona Clientes. Si es
                         cliente y no tiene clave de acceso
                         llamenos al Tel. 91 123 45 67 </p>
-                    <p><a class="btn btn-default" href="#" role="button">Petición de claves por e-mail &raquo;</a></p>
+                    <p><a href="#">Petición de claves por e-mail &raquo;</a></p>
                 </div>
                 <div class="col-md-4">
                     <h2>
