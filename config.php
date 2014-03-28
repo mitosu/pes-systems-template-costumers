@@ -12,11 +12,12 @@ $dbname = "recogid_sue";
 
 # Datos Generales del Sitio
 define('_SITE_URL', 'www.demotrans.es'); // URL del Sitio (sin /)
+define('_EMP_KEYWORDS', 'transporte madrid, empresa transporte madrid, mensajeria madrid');
 
 # Datos Cliente
 define('_EMP_TEL',	'91 123 45 67');
 define('_EMP_MOTO',	'Su Empresa, S.L.  Mensajeros rapidos');
-
+define('_EMP_TITLE', '<title>DemoTrans | Mensajeros | Mensajerías | Courier | Transporte Urgente</title>');
 define('_EMP_MAILTO', '<a href="mailto:comercial@pes-systems.net">comercial@pes-systems.net</a>' );
 define('_EMP_LEMA',	'Mensajeros Rapidos');
 define('_EMP_FAX',	'91 123 45 68');
@@ -24,8 +25,8 @@ define('_EMP_EMPRESA','DemoTrans, S.L.');
 define('_TEL_COMERCIAL', '91 660 84 90');
 define('_TEL_RECOGIDAS', '91 000 00 00');
 define('_EMP_MAIL','info&#64;demotrans.es');
-define('_EMAIL_COMERCIAL', '<a href="mailto:comercial@pes-systems.net?subject=Departamento Comercial">comercial@pes-systems.net</a>');
-define('_EMAIL_RECOGIDAS', '<a href="mailto:recogidas@pes-systems.net?subject=Solicitud de Recogida">recogidas@pes-systems.net</a>');
+define('_EMAIL_COMERCIAL', '<a href="mailto:comercial@pes-systems.net">comercial@pes-systems.net</a>');
+define('_EMAIL_RECOGIDAS', '<a href="mailto:recogidas@pes-systems.net">recogidas@pes-systems.net</a>');
 define('_EMP_DP_CIUDAD','28020 Madrid');
 define('_EMP_CIF','B12345678');
 define('_EMP_CALLE',	'Orense, 12');

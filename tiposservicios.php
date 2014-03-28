@@ -17,6 +17,5 @@ echo '<h2></h2>
                         <a href="#" class="list-group-item">Servicio Insular</a>
                         <a href="#" class="list-group-item">Servicio de Carga</a>
                         <a href="#" class="list-group-item">Servicio de Almacenaje</a>
-                    </div>
-                    <p><a href="#" >Condiciones &raquo;</a></p>';
+                    </div>';
 
