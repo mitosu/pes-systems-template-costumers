@@ -20,6 +20,8 @@ define('_EMP_MOTO',	'Su Empresa, S.L.  Mensajeros rapidos');
 define('_EMP_TITLE', '<title>DemoTrans | Mensajeros | Mensajerías | Courier | Transporte Urgente</title>');
 define('_EMP_MAILTO', '<a href="mailto:comercial@pes-systems.net">comercial@pes-systems.net</a>' );
 define('_EMP_LEMA',	'Mensajeros Rapidos');
+define('_EMP_LEMA_EMPRESA', 'Quienes somos');
+define('_EMP_LEMA_LOCATION', 'Localización');
 define('_EMP_FAX',	'91 123 45 68');
 define('_EMP_EMPRESA','DemoTrans, S.L.');
 define('_TEL_COMERCIAL', '91 660 84 90');

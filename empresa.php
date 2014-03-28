@@ -44,8 +44,8 @@
             <!--Cotenido Cuerpo-->
             <div class="row">
                 <div class="col-md-9">
-                    <!--Urgent courier-->
-                    <?php include ('mensajeria_urgente.php');?>
+                    <!--About us-->
+                    <?php include ('quienes_somos.php');?>
                 </div>
                 <div class="col-md-3">
                     <!--Our locations-->

@@ -14,14 +14,14 @@ echo '<nav class="menu_top navbar navbar-default" role="navigation">
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-home"></span></a>
+                        <a class="navbar-brand" href="index.php"><span class="glyphicon glyphicon-home"></span></a>
                     </div>
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav">
-                            <li class="active"><a href="#">Empresa</a></li>
-                            <li><a href="#">Localización</a></li>
+                            <li class="active"><a href="empresa.php">Empresa</a></li>
+                            <li><a href="localizacion.php">Localización</a></li>
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Servicios <b class="caret"></b></a>
                                 <ul class="dropdown-menu">

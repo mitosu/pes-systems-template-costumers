@@ -28,7 +28,16 @@
                 $('#zona_cliente').click(function(){
                     $('#usuario').popover('show');
                 });
-            });        
+                
+                //$("#mapa_google")[0].setAttribute("width", "200");
+                //$("#mapa_google")[0].setAttribute("height", "200");
+                //$(window).on("resize", updateMax);
+                
+                 //function updateMax() {
+                //$('#container_map').css("max-height", $(this).height() - 100);
+                //alert('remimencionando');
+                //}   
+            });
         </script>
     </head>
     <body>
@@ -44,8 +53,8 @@
             <!--Cotenido Cuerpo-->
             <div class="row">
                 <div class="col-md-9">
-                    <!--Urgent courier-->
-                    <?php include ('mensajeria_urgente.php');?>
+                    <!--Map Location-->
+                    <?php include ('map_location.php');?>
                 </div>
                 <div class="col-md-3">
                     <!--Our locations-->
