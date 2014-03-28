@@ -69,3 +69,30 @@ body{
     font-family: Tahoma;
     font-size: 11px;
 }
+
+@media (min-width: 1200px) {
+    #map{
+        max-width: 650px;
+        max-height: 350px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 979px){
+    #map{
+        max-width: 450px;
+        
+    }
+}
+
+@media (max-width: 767px) {
+    #map{
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 480px) {
+    #map{
+        max-width: 200px;
+        max-height: 200px;
+    }
+}
