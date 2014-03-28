@@ -4,10 +4,10 @@ date_default_timezone_set('Europe/Madrid');
 $mashours=0;   //apartir 27.3.2011
 
 # Datos MySql
-$dbhost = "www.demotrans.es";
-$dbuname= "recogid_sue" ;
-$dbpass = "4301234";
-$dbname = "recogid_sue";
+$dbhost = "localhost";
+$dbuname= "root" ;
+$dbpass = "";
+$dbname = "pes";
 
 
 # Datos Generales del Sitio
