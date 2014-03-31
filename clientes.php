@@ -45,7 +45,7 @@
             <div class="row">
                 <div class="col-md-9">
                     <!--About us-->
-                    <?php include ('trabajar_text.php');?>
+                    <?php include ('clientes_text.php');?>
 
                         <div class="row">
                             <div class="col-md-4">
@@ -54,24 +54,17 @@
                             <div class="col-md-8">
                                 <form role="form">
                                     <div class="form-group">
-                                        <label for="nombre">Su nombre: </label>
-                                        <input type="text" class="form-control" id="nombre" placeholder="Escriba su nombre">
+                                        <label for="usuario">Nombre de Usuario</label>
+                                        <input type="email" class="form-control" id="usuario" placeholder="Escriba su nombre de usuario">
                                     </div>
                                     <div class="form-group">
-                                        <label for="email">E-mail: </label>
-                                        <input type="email" class="form-control" id="email" placeholder="Escriba su e-mail">
+                                        <label for="password">Contraseña</label>
+                                        <input type="password" class="form-control" id="password" placeholder="Escriba su contraseña">
                                     </div>
                                     <div class="form-group">
-                                        <label for="addfile">Adjunte su curriculum</label>
-                                        <input type="file" id="addfile">
-                                        <p class="help-block"></p>
+                                        <p class="help-block">Si no dispone de credenciales, solicite sus datos al Administrador.</p>
                                     </div>
-                                    <div class="form-group">
-                                         <label for="mensaje">Mensaje:</label>
-                                         <textarea class="form-control" rows="3"></textarea>
-                                    </div>
-                                    <button type="submit" class="btn btn-default">Enviar</button>
-                                    <button type="reset" class="btn btn-default">Cancelar</button>
+                                    <button type="submit" class="btn btn-default">Entrar</button>
                                 </form>
                             </div>
                         </div>

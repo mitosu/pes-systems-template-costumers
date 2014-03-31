@@ -37,8 +37,8 @@ echo '<nav class="menu_top navbar navbar-default" role="navigation">
                                 </ul>
                             </li>
                             <li><a href="trabajar.php">Trabajar</a></li>
-                            <li><a href="#">Información</a></li>
-                            <li><a href="#">Clientes</a></li>
+                            <li><a href="info.php">Información</a></li>
+                            <li><a href="clientes.php">Clientes</a></li>
                         </ul>
                     </div><!-- /.navbar-collapse -->
                 </div><!-- /.container-fluid -->
