@@ -45,15 +45,9 @@
             <div class="row">
                 <div class="col-md-9">
                     <!--About us-->
-                    <?php include ('quienes_somos.php');?>
-
-                        <div class="row">
-                            <div class="col-md-4">
-                                <?php include ('empresa_box.php');?>
-                            </div>
-                            <div class="col-md-8"></div>
-                        </div>
-
+                    <?php include ('servicio_nacional.php');?>
+                    <?php include ('servicio_insular.php');?>
+                    <?php include ('servicio_internacional.php');?>
                 </div>
                 <div class="col-md-3">
                     <!--Our locations-->
@@ -62,6 +56,7 @@
                     <?php include ('newsletter.php');?>
                 </div>
             </div>
+
 
             <!--SubContenido-->
             <div class="row">

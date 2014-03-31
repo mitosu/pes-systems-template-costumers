@@ -45,13 +45,15 @@
             <div class="row">
                 <div class="col-md-9">
                     <!--About us-->
-                    <?php include ('quienes_somos.php');?>
+                    <?php include ('trabajar_text.php');?>
 
                         <div class="row">
                             <div class="col-md-4">
                                 <?php include ('empresa_box.php');?>
                             </div>
-                            <div class="col-md-8"></div>
+                            <div class="col-md-8">
+                                ciao
+                            </div>
                         </div>
 
                 </div>
@@ -62,6 +64,7 @@
                     <?php include ('newsletter.php');?>
                 </div>
             </div>
+
 
             <!--SubContenido-->
             <div class="row">

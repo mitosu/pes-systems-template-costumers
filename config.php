@@ -21,6 +21,10 @@ define('_EMP_TITLE', '<title>DemoTrans | Mensajeros | Mensajerías | Courier | T
 define('_EMP_MAILTO', '<a href="mailto:comercial@pes-systems.net">comercial@pes-systems.net</a>' );
 define('_EMP_LEMA',	'Mensajeros Rapidos');
 define('_EMP_LEMA_EMPRESA', 'Quienes somos');
+define('_EMP_SERV_NACIONAL', 'Servicio Nacional');
+define('_EMP_SERV_INSULAR', 'Sevicio Insular');
+define('_EMP_SERV_INTERNACIONAL', 'Sevicio Internacional');
+define('_EMP_TRABAJAR', 'Trabaja con nosotros');
 define('_EMP_LEMA_LOCATION', 'Localización');
 define('_EMP_FAX',	'91 123 45 68');
 define('_EMP_EMPRESA','DemoTrans, S.L.');
