@@ -73,7 +73,7 @@ body{
 @media (min-width: 1200px) {
     #map{
         max-width: 650px;
-        max-height: 350px;
+        max-height: 450px;
     }
 }
 

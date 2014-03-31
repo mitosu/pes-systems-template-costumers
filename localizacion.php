@@ -59,8 +59,9 @@
                 <div class="col-md-3">
                     <!--Our locations-->
                     <?php include ('destinos.php');?>
-                    <!--Newsletters-->
-                    <?php include ('newsletter.php');?>
+                    <!--box empresa-->
+                    <hr>
+                    <?php include ('empresa_box.php');?>
                 </div>
             </div>
 

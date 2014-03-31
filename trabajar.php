@@ -69,7 +69,7 @@
                                     </div>
                                     <div class="form-group">
                                          <label for="mensaje">Mensaje:</label>
-                                         <textarea class="form-control" rows="3"></textarea>
+                                         <textarea id="mensaje" class="form-control" rows="3"></textarea>
                                     </div>
                                     <button type="submit" class="btn btn-default">Enviar</button>
                                     <button type="reset" class="btn btn-default">Cancelar</button>

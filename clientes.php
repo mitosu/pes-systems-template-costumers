@@ -55,8 +55,8 @@
                             <div class="col-md-8 well">
                                 <form role="form">
                                     <div class="form-group">
-                                        <label for="usuario">Nombre de Usuario</label>
-                                        <input type="email" class="form-control" id="usuario" placeholder="Escriba su nombre de usuario">
+                                        <label for="nbusuario">Nombre de Usuario</label>&nbsp; <span class="glyphicon glyphicon-user"></span>
+                                        <input type="email" class="form-control" id="nbusuario" placeholder="Escriba su nombre de usuario">
                                     </div>
                                     <div class="form-group">
                                         <label for="password">Contraseña</label>

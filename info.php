@@ -62,16 +62,16 @@
                                     <input type="text" class="form-control" id="direccion" placeholder="Escriba la dirección de la empresa">
                                 </div>
                                 <div class="row">
-                                    <div class="col-md-3">
+                                    <div class="col-md-4">
                                         <div class="form-group">
-                                            <label for="cpostal">Código Postal: </label>
-                                            <input type="text" class="form-control" id="cpostal">
+                                            <label for="cpostal">C.P. : </label>
+                                            <input type="text" class="form-control" id="cpostal" placeholder="Código postal">
                                         </div>                                        
                                     </div>
-                                    <div class="col-md-9">
+                                    <div class="col-md-8">
                                         <div class="form-group">
                                             <label for="ciudad">Ciudad: </label>
-                                            <input type="text" class="form-control" id="ciudad">
+                                            <input type="text" class="form-control" id="ciudad" placeholder="Ciudad">
                                         </div> 
                                     </div>
                                 </div>

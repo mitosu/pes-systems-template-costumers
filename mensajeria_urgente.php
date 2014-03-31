@@ -5,7 +5,7 @@
     Name: Miguel Angel Torres 
  */
 
-echo '<h2> <span class="label label-primary">'._EMP_LEMA.'</span></h2>
+echo '<h4><span class="label label-primary">'._EMP_LEMA.'</span></h4>
                             <p><img src="img/2_p4.jpg" alt="Mensajeria rapida" class="image_aling_text img-rounded">En todos nuestros servicios '._EMP_EMPRESA.' busca cumplir un objetivo, proporcionar un servicio de entrega de documentos y paquetería con la mayor rapidez y la mayor seguridad. Para ofrecer este servicio contamos con un equipo especializado y exclusivo, que además cuenta para su localización y seguimiento con la tecnología más avanzada del mercado. Por ello, sus documentos o paquetes están constantemente controlados pudiendo así dar un servicio puntual y sin ningún tipo de riesgos.  </p>
                             <p><a href="info.php">Más información &raquo;</a></p>
                     <div class="imagen_home row">
