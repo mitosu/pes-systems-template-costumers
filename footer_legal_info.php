@@ -5,13 +5,13 @@
     Author     : Mitosu
     Name: Miguel Angel Torres 
  */
-
 echo '<div class="links_footer col-md-3">
-                         <h4>¿Necesitas ayuda?</h4>
+                         <h4>Contacto desde fuera de España</h4>
                         <dl>
                             <dt></dt>
-                            <dd>Asistencia telefónica: +34 91 000 000</dd>
-                            <dd>Soporte en Español 1 800 000 0000</dd>
+                            <dd>Asistencia telefónica: '._EMP_TEL34.'</dd>
+                            <dd>Soporte en Español '._EMP_SUPPORT_SPAIN.'</dd>
+                            <dd><a href="'._EMP_SKYPE.'"><img src="img/servicios_img_home/skype.png" alt="Skype">Skype</a></dd>
                           </dl>
                             <hr>
                             <dl>

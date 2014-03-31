@@ -49,6 +49,10 @@ body{
     color: #ffffff;
 }
 
+.links_footer a:visited{
+    color: #66ccff;
+}
+
 .redes_sociales img{
     width: 30px;
     height: 30px;
