@@ -5,7 +5,7 @@
     Name: Miguel Angel Torres 
  */
 
-echo '<div id="servicio_nacional"></div><h2> <span class="label label-primary">'._EMP_SERV_NACIONAL.'</span></h2>
+echo '<div id="servicio_nacional"></div><h3> <span class="label label-primary">'._EMP_SERV_NACIONAL.'</span></h3>
                             <p>
                                 <table class="table table-bordered table-hover">
                                     <tr>

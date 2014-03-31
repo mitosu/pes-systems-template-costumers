@@ -5,6 +5,6 @@
     Name: Miguel Angel Torres 
  */
 
-echo '<div id="servicio_insular"></div><h2> <span class="label label-primary">'._EMP_SERV_INSULAR.'</span></h2>
+echo '<div id="servicio_insular"></div><h3> <span class="label label-primary">'._EMP_SERV_INSULAR.'</span></h3>
                             <p>Servicio puerta a puerta para documentos y paquetería a Canarias. El servicio a Canarias necesita factura <a href="pdf/proforma.pdf">proforma</a> para reexpediciones que no sean documentos.
 </p>';

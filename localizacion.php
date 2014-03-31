@@ -66,27 +66,6 @@
 
             <!--SubContenido-->
             <div class="row">
-                <div class="col-md-3">
-                    <!--Services menu-->
-                    <?php include ('tiposservicios.php');?>
-                </div>
-                <div class="col-md-5">
-                    <h2>
-                        <span id="zona_cliente" class="label label-primary"> Zona de Clientes <span class="glyphicon glyphicon-log-in"></span></span>
-                    </h2>
-                    <p>En esta web nuestros clientes pueden encargar recogidas, comprobar el estado de los mismos y consultar facturas pinchando aqui Zona Clientes. Si es
-                        cliente y no tiene clave de acceso
-                        llamenos al Tel. 91 123 45 67 </p>
-                    <p><a href="#">Petición de claves por e-mail &raquo;</a></p>
-                </div>
-                <div class="col-md-4">
-                    <h2>
-                        <span class="label label-primary">Contactar</span>
-                    </h2>
-                    <p>Pinche aqui si quiere ponerse en contacto con nosotros por e-mail info@demotrans.es.<br/>
-                        Para contactar por telefono Tel:  91 123 45 67 nuestro horario de oficina es de 09h00 a 19h00 de lunes a viernes. Fax 91 123 45 68  </p>
-                    <p><a href="#" >Contactenos &raquo;</a></p>
-                </div>
             </div>
 
             <hr>
