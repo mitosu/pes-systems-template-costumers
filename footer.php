@@ -9,12 +9,12 @@
                    include ('menu_bottom.php');
                 //Footer Content
                   echo' <div id="footer_web" class="row">';
-                    //Empresa
-                     include ('footer_empresa.php');
                     //Copyright
                     include ('footer_servicios.php');
                     //<nformación
                      include ('footer_info_center.php');
+                     //Recogidas
+                     include ('footer_recogidas.php');
                     //Legal
                      include ('footer_legal_info.php');
                   echo '</div>';

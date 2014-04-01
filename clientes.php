@@ -63,7 +63,7 @@
                                         <input type="password" class="form-control" id="password" placeholder="Escriba su contraseña">
                                     </div>
                                     <div class="form-group">
-                                        <p class="help-block">Si no dispone de credenciales, solicite sus datos al Administrador.</p>
+                                        <p class="help-block">Si no dispone de credenciales, solicite sus datos al <?php echo _EMP_TEL?>.</p>
                                     </div>
                                     <button type="submit" class="btn btn-default">Entrar</button>
                                 </form>

@@ -1,3 +1,6 @@
+<?php require_once ('recaptchalib.php');
+    $publickey = "6LdhEfESAAAAAA1O5pSuKf-Jjq-RGIg_qrDsn9FE";
+?>
 <!DOCTYPE html>
 <?php include ('config.php');?>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -46,7 +49,7 @@
                 <div class="col-md-9 ">
                     <!--About us-->
                     <?php include ('info_text.php'); ?>
-                    <form role="form">
+                    <form role="form" action="verify.php" method="POST">
                         <div class="row">
                             <div class="col-md-8">
                                 <div class="form-group">
@@ -116,7 +119,15 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="mensaje">Mensaje:</label>
-                                    <textarea  class="form-control" rows="12" id="mensaje" placeholder="Escriba su mensaje"></textarea>
+                                    <textarea  class="form-control" rows="5" id="mensaje" placeholder="Escriba su mensaje"></textarea>
+                                </div>
+                                <script type="text/javascript">
+                                    var RecaptchaOptions = {
+                                        theme : 'clean'
+                                     };
+                                </script>
+                                <div class="form-group">
+                                    <?php echo recaptcha_get_html($publickey); ?>
                                 </div>
                                 <button type="submit" class="btn btn-default">Enviar</button>
                                 <button type="reset" class="btn btn-default">Restablecer</button>
@@ -128,7 +139,6 @@
                     <!--Our locations-->
                     <?php include ('destinos.php');?>
                     <!--Newsletters-->
-                    <?php include ('newsletter.php');?>
                 </div>
             </div>
 

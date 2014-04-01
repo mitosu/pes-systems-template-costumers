@@ -14,13 +14,6 @@ echo '<div class="links_footer col-md-3">
                             <dd><a href="'._EMP_SKYPE.'"><img src="img/servicios_img_home/skype.png" alt="Skype">Skype</a></dd>
                           </dl>
                             <hr>
-                            <dl>
-                            <dt><a href="preguntas_frecuentes.php">Preguntas frecuentes</a></dt>
-                            <dt><a href="sitemap.php">Mapa del sitio</a></dt>
-                            <dt><a href="contacto.php">Ponte en contacto con nosotros</a></dt>
-                            <dd></dd>
-                            </dl>
-                            <hr>
                             <div class="redes_sociales">
                             <dl>
                             <dt>Siguenos:</dt>

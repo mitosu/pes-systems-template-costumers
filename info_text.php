@@ -6,4 +6,5 @@
  */
 
 echo '<div id="servicio_insular"></div><h3> <span class="label label-primary">'._EMP_INFO.'</span></h3>
-                            <p>Si les interesa trabajar con nosotros como conductor de moto o furgoneta comunicarnos sus datos abajo. Nos interesa saber su experiencia, que vehículo tienes y teléfono de contacto. </p>';
+                            <p>Si les interesa más información sobre nuestros servicios o una visita comercial. Llámenos o envíenos sus datos desde el formulario de abajo. Le informaremos sin compromiso
+                            de los productos que más les pueden interesar.</p>';

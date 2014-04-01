@@ -13,11 +13,4 @@ echo '<div class="links_footer col-md-3">
                             <dd>'._TEL_COMERCIAL.'</dd>
                             <dd>'._EMAIL_COMERCIAL.'</dd>
                         </dl>
-                        <hr>
-                        <h4>Recogidas y Servicio al Cliente</h4>
-                        <dl>
-                            <dt></dt>
-                            <dd>'._TEL_RECOGIDAS.'</dd>
-                            <dd>'._EMAIL_RECOGIDAS.'</dd>
-                        </dl>
                     </div>';
