@@ -4,10 +4,18 @@ date_default_timezone_set('Europe/Madrid');
 $mashours=0;   //apartir 27.3.2011
 
 # Datos MySql
+$dbhost = "www.recogidas.biz";
+$dbuname= "recogidasbiz" ;
+$dbpass = "Recobiz2014";
+$dbname = "recogidasbiz";
+
+# Datos MySql
+/*
 $dbhost = "localhost";
 $dbuname= "root" ;
 $dbpass = "";
 $dbname = "pes";
+ * */
 
 
 # Datos Generales del Sitio
