@@ -1,5 +1,5 @@
 <?php require_once ('recaptchalib.php');
-    $publickey = "6LdhEfESAAAAAA1O5pSuKf-Jjq-RGIg_qrDsn9FE";
+    /*$publickey = "6LdhEfESAAAAAA1O5pSuKf-Jjq-RGIg_qrDsn9FE";*/
 ?>
 <!DOCTYPE html>
 <?php include ('config.php');?>
@@ -32,6 +32,17 @@
                 $('#zona_cliente').click(function(){
                     $('#usuario').popover('show');
                 });
+                $('#empresa').focus();
+                $('#mensaje').focus(showRecaptcha);
+                
+                function showRecaptcha(){
+                            Recaptcha.create("6LdhEfESAAAAAA1O5pSuKf-Jjq-RGIg_qrDsn9FE",
+                             "recaptcha",
+                            {
+                              theme: "clean"
+                            }
+                          );
+                }
             });        
         </script>
     </head>
@@ -127,10 +138,10 @@
                                         theme : 'clean'
                                      };
                                 </script>
-                                <div class="form-group">
+                                <div id="recaptcha" class="form-group">
                                     
                                 </div>
-                                <button type="submit" class="btn btn-default">Enviar</button>
+                                <button id="send" type="submit" class="btn btn-default" disabled="">Enviar</button>
                                 <button type="reset" class="btn btn-default">Restablecer</button>
                             </div>
                         </div>
