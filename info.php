@@ -43,7 +43,48 @@
                             }
                           );
                 }
-            });        
+                
+                $('#mensaje').blur(function(){
+                    var men= $('#mensaje').val();
+                    var value= Recaptcha.get_challenge();
+                    if(value !== "" && men !== ""){
+                        $('#send').removeAttr('disabled');                        
+                    }
+                });
+                
+                $(function(){
+             
+            function captcha(){
+                  var v1 = $("input#recaptcha_challenge_field").val();
+                  var v2 = $("input#recaptcha_response_field").val();
+
+                        $.ajax({
+                            type: "POST",
+                            url: "verify.php",
+                            data: "recaptcha_challenge_field=" + v1 + "&recaptcha_response_field=" + v2,
+                            dataType: "html",
+                            error: function() {
+                                alert("error petición ajax");
+                            },
+                            success: function(data) {
+                                if (data == 0) {
+                                    alert('El código es incorrecto');
+                                    Recaptcha.reload();
+                                } else if (data == 1) {
+                                    //$('#info').submit();
+                                    alert('Codigo correcto');
+                                }
+                            }
+                        });
+
+                    }
+                    
+                    $("#send").click(captcha);
+
+                });
+
+            });
+
         </script>
     </head>
     <body>
@@ -61,7 +102,7 @@
                 <div class="col-md-9 ">
                     <!--About us-->
                     <?php include ('info_text.php'); ?>
-                    <form role="form" action="verify.php" method="POST">
+                    <form id="info" role="form" action="" method="POST">
                         <div class="row">
                             <div class="col-md-8">
                                 <div class="form-group">
@@ -141,7 +182,7 @@
                                 <div id="recaptcha" class="form-group">
                                     
                                 </div>
-                                <button id="send" type="submit" class="btn btn-default" disabled="">Enviar</button>
+                                <button id="send" type="button" class="btn btn-default" disabled="">Enviar</button>
                                 <button type="reset" class="btn btn-default">Restablecer</button>
                             </div>
                         </div>
@@ -171,6 +212,10 @@
             <script src="js/vendor/bootstrap.min.js"></script>
 
             <script src="js/main.js"></script>
+            
+            <script>
+           
+            </script>
         </div>
     </body>
 </html>

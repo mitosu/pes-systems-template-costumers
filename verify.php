@@ -14,10 +14,10 @@ $resp = recaptcha_check_answer ($privatekey,
                                 $_POST["recaptcha_response_field"]);
 
 if(!$resp->is_valid){
-    header('Location: info.php');
+    echo 0;
    /* die ("La imagen de verificaci&oacute;n no se ha introducido correctamente. Por favor vuelve a intentarlo" .
          "(reCAPTCHA: " . $resp->error . ")");*/
 }else{
-    header('Location: prueba_captcha.php');
+    echo 1;
 }
 
