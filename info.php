@@ -30,8 +30,7 @@
                 $('#zona_cliente').click(function(){
                     $('#usuario').popover('show');
                 });
-                $('#empresa').focus();
-                $('#mensaje').focus(showRecaptcha);
+                $('#empresa').focus(showRecaptcha);
                 
                 function showRecaptcha(){
                             Recaptcha.create("6LdhEfESAAAAAA1O5pSuKf-Jjq-RGIg_qrDsn9FE",
@@ -41,14 +40,6 @@
                             }
                           );
                 }
-                
-                $('#mensaje').blur(function(){
-                    var men= $('#mensaje').val();
-                    var value= Recaptcha.get_challenge();
-                    if(value !== "" && men !== ""){
-                        $('#send').removeAttr('disabled');                        
-                    }
-                });
                 
                 $(function(){
              
@@ -174,7 +165,7 @@
                                 <div id="recaptcha" class="form-group">
                                     
                                 </div>
-                                <button id="send" type="button" class="btn btn-default" disabled="">Enviar</button>
+                                <button id="send" type="button" class="btn btn-default">Enviar</button>
                                 <button type="reset" class="btn btn-default">Restablecer</button>
                             </div>
                         </div>
