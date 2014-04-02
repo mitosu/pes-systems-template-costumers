@@ -6,8 +6,10 @@
     Name: Miguel Angel Torres 
  */
 
+include ('config.php');
 require_once ('recaptchalib.php');
-$privatekey = "6LdhEfESAAAAAIFf0d4CPt9DML1Rl2xISTdpEAhm";
+
+$privatekey = _REC_PRIVATE_KEY;
 $resp = recaptcha_check_answer ($privatekey,
                                 $_SERVER["REMOTE_ADDR"],
                                 $_POST["recaptcha_challenge_field"],
@@ -15,8 +17,6 @@ $resp = recaptcha_check_answer ($privatekey,
 
 if(!$resp->is_valid){
     echo 0;
-   /* die ("La imagen de verificaci&oacute;n no se ha introducido correctamente. Por favor vuelve a intentarlo" .
-         "(reCAPTCHA: " . $resp->error . ")");*/
 }else{
     echo 1;
 }

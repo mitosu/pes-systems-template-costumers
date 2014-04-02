@@ -1,6 +1,4 @@
-<?php require_once ('recaptchalib.php');
-    /*$publickey = "6LdhEfESAAAAAA1O5pSuKf-Jjq-RGIg_qrDsn9FE";*/
-?>
+<?php require_once ('recaptchalib.php');?>
 <!DOCTYPE html>
 <?php include ('config.php');?>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -173,11 +171,6 @@
                                     <label for="mensaje">Mensaje:</label>
                                     <textarea  class="form-control" rows="5" id="mensaje" placeholder="Escriba su mensaje"></textarea>
                                 </div>
-                                <script type="text/javascript">
-                                    var RecaptchaOptions = {
-                                        theme : 'clean'
-                                     };
-                                </script>
                                 <div id="recaptcha" class="form-group">
                                     
                                 </div>

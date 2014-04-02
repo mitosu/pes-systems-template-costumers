@@ -17,6 +17,9 @@ $dbpass = "";
 $dbname = "pes";
  * */
 
+#Datos recaptcha
+define('_REC_PUBLIC_KEY', '6LdhEfESAAAAAA1O5pSuKf-Jjq-RGIg_qrDsn9FE');
+define('_REC_PRIVATE_KEY', '6LdhEfESAAAAAIFf0d4CPt9DML1Rl2xISTdpEAhm');
 
 # Datos Generales del Sitio
 define('_SITE_URL', 'www.demotrans.es'); // URL del Sitio (sin /)
