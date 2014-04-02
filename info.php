@@ -71,8 +71,7 @@
                                     alert('El código es incorrecto');
                                     Recaptcha.reload();
                                 } else if (data == 1) {
-                                    //$('#info').submit();
-                                    alert('Codigo correcto');
+                                    $('#info').submit();
                                 }
                             }
                         });
