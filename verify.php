@@ -16,7 +16,7 @@ $resp = recaptcha_check_answer ($privatekey,
                                 $_POST["recaptcha_response_field"]);
 
 if(!$resp->is_valid){
-    echo 0;
+    header('Location: info.php');
 }else{
     echo 1;
 }
