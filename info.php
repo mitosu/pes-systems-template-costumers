@@ -88,7 +88,7 @@
                 <div class="col-md-9 ">
                     <!--About us-->
                     <?php include ('info_text.php'); ?>
-                    <form id="info" role="form" action="" method="GET">
+                    <form id="info" role="form" action="enviainfo.php" method="GET">
                         <div class="row">
                             <div class="col-md-8">
                                 <div class="form-group">
