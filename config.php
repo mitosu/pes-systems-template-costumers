@@ -77,10 +77,12 @@ E-mail: <strong><a href="mailto:suempresa&#64;suempresa.es">suempresa&#64;suempr
 $empmailentrega_sender_name="info@demotrans.es"					; 
 
 #envia info
- $enviainfo_to = "ventas@pes-systems.net"    ;
+ $enviainfo_to = "miguel@pes-systems.net";
+ //$enviainfo_to = "ventas@pes-systems.net";
  $enviainfo_from = "web@pes-systems.net";
  $enviainfo_host     = "mail.pes-systems.net";
  $enviainfo_username = "ventas@pes-systems.net";
  $enviainfo_password = "912940184";
+ $enviainfo__port    = "587";
  
 

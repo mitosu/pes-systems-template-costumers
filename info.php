@@ -14,16 +14,52 @@
         <script src="js/jquery-1.8.2.min.js"></script>
         <script src="js/languages/jquery.validationEngine-es.js" type="text/javascript" charset="utf-8"></script>
         <script src="js/jquery.validationEngine.js" type="text/javascript" charset="utf-8"></script>
+        <script type="text/javascript" src="http://www.google.com/recaptcha/api/js/recaptcha_ajax.js"></script>
         <link rel="stylesheet" href="css/validationEngine.jquery.css" type="text/css"/>
         <script>
             $(document).ready(function(){
                  $('#info').validationEngine();
                  $('#recaptcha_response_field').addClass('validate[required]');
                  $('#empresa').focus();
+                 $('#empresa').focusout(showRecaptcha);
+                 $("#send").click(captcha);
+
              });
+             
+                  function showRecaptcha(){
+                            Recaptcha.create("6LdhEfESAAAAAA1O5pSuKf-Jjq-RGIg_qrDsn9FE",
+                           "recaptcha",
+                           {
+                                     theme: "clean"
+                            }
+                  );}
+              //Comprobación
+              function captcha(){
+                  var v1 = $("input#recaptcha_challenge_field").val();
+                  var v2 = $("input#recaptcha_response_field").val();
+
+                        $.ajax({
+                            type: "POST",
+                            url: "verify.php",
+                            data: "recaptcha_challenge_field=" + v1 + "&recaptcha_response_field=" + v2,
+                            dataType: "html",
+                            error: function() {
+                                alert("error petición ajax");
+                            },
+                            success: function(data) {
+                                if (data == 0) {
+                                    alert('El código es incorrecto');
+                                    Recaptcha.reload();
+                                } else if (data == 1) {
+                                    $('#info').submit();
+                                }
+                            }
+                        });
+              }
+              
         </script>
         <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.js"></script>-->
-        <!--<script type="text/javascript" src="http://www.google.com/recaptcha/api/js/recaptcha_ajax.js"></script>-->
+        <script type="text/javascript" src="http://www.google.com/recaptcha/api/js/recaptcha_ajax.js"></script>
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/stylepage.css">
         <style>
@@ -52,32 +88,32 @@
                 <div class="col-md-9 ">
                     <!--About us-->
                     <?php include ('info_text.php'); ?>
-                    <form id="info" role="form" action="" method="POST">
+                    <form id="info" role="form" action="" method="GET">
                         <div class="row">
                             <div class="col-md-8">
                                 <div class="form-group">
                                     <label for="empresa">(*) Empresa: </label>
-                                    <input type="text" class="form-control validate[required]" id="empresa" placeholder="Escriba el nombre de su empresa">
+                                    <input type="text" class="form-control validate[required]" id="empresa" placeholder="Escriba el nombre de su empresa" name="empresa">
                                 </div>
                                 <div class="form-group">
                                     <label for="contacto">(*) Persona de contacto: </label>
-                                    <input type="text" class="form-control validate[required]" id="contacto" placeholder="Escriba el nombre de contacto">
+                                    <input type="text" class="form-control validate[required]" id="contacto" placeholder="Escriba el nombre de contacto" name="contacto">
                                 </div>
                                 <div class="form-group">
                                     <label for="direccion">(*) Dirección: </label>
-                                    <input type="text" class="form-control validate[required]" id="direccion" placeholder="Escriba la dirección de la empresa">
+                                    <input type="text" class="form-control validate[required]" id="direccion" placeholder="Escriba la dirección de la empresa" name="direccion">
                                 </div>
                                 <div class="row">
                                     <div class="col-md-4">
                                         <div class="form-group">
                                             <label for="cpostal">(*) C.P. : </label>
-                                            <input type="text" class="form-control validate[required]" id="cpostal" placeholder="Código postal">
+                                            <input type="text" class="form-control validate[required]" id="cpostal" placeholder="Código postal" name="cpostal">
                                         </div>                                        
                                     </div>
                                     <div class="col-md-8">
                                         <div class="form-group">
                                             <label for="ciudad">(*) Ciudad: </label>
-                                            <input type="text" class="form-control validate[required]" id="ciudad" placeholder="Ciudad">
+                                            <input type="text" class="form-control validate[required]" id="ciudad" placeholder="Ciudad" name="ciudad">
                                         </div> 
                                     </div>
                                 </div>
@@ -85,53 +121,49 @@
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label for="phone">Teléfono: </label>
-                                            <input type="text" class="form-control" id="phone" placeholder="Escriba su teléfono">
+                                            <input type="text" class="form-control" id="phone" placeholder="Escriba su teléfono" name="phone">
                                         </div>                                        
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label for="fax">Fax: </label>
-                                            <input type="text" class="form-control" id="fax" placeholder="Escriba su fax">
+                                            <input type="text" class="form-control" id="fax" placeholder="Escriba su fax" name="fax">
                                         </div> 
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="email">(*) E-Mail: </label>
-                                    <input type="email" class="form-control validate[required,custom[email]]" id="email" placeholder="Escriba su dirección de correo">
+                                    <input type="email" class="form-control validate[required,custom[email]]" id="email" placeholder="Escriba su dirección de correo" name="email">
                                 </div> 
                             </div>
                             <div class="col-md-4">
                                 <h6><strong>Nos interesa servicios:</strong></h6>
                                 <div class="checkbox">
                                     <label>
-                                        <input type="checkbox" value="">
+                                        <input type="checkbox" value="" name="locales">
                                         Locales
                                     </label>
                                 </div>
                                 <div class="checkbox">
                                     <label>
-                                        <input type="checkbox" value="">
+                                        <input type="checkbox" value="" name="nacionales">
                                         Nacionales
                                     </label>
                                 </div>
                                 <div class="checkbox">
                                     <label>
-                                        <input type="checkbox" value="">
+                                        <input type="checkbox" value="" name="internacionales">
                                         Internacionales
                                     </label>
                                 </div>
                                 <div class="form-group">
                                     <label for="mensaje">Mensaje:</label>
-                                    <textarea  class="form-control" rows="5" id="mensaje" placeholder="Escriba su mensaje"></textarea>
+                                    <textarea  class="form-control" rows="5" id="mensaje" placeholder="Escriba su mensaje" name="mensaje"></textarea>
                                 </div>
                                 <div id="recaptcha" class="form-group">
-                                    <?php
-                                    //require_once('recaptchalib.php');
-                                    //$publickey = _REC_PUBLIC_KEY;
-                                    //echo recaptcha_get_html($publickey);
-                                    ?>
+                                    
                                 </div>
-                                <button id="send" type="submit" class="btn btn-default">Enviar</button>
+                                <button id="send" type="button" class="btn btn-default">Enviar</button>
                                 <button type="reset" class="btn btn-default">Restablecer</button><br/>
                                 (*) Campos obligatorios
                             </div>
@@ -158,11 +190,8 @@
             </footer>
             <!--</div>--> <!-- /container -->
             <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.js"><\/script>')</script>
-
             <script src="js/vendor/bootstrap.min.js"></script>
-
-            <script src="js/main.js"></script>
-            
+            <script src="js/main.js"></script>           
             <script>
            
             </script>
