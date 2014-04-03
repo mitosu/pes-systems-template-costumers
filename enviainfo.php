@@ -83,7 +83,7 @@
 
     if (!$mail->Send()) {
         echo "Mailer Error: " . $mail->ErrorInfo;
-        echo "No podir enviar confirmación enviado por EMail a " . $enviainfo_to;
+        echo "No puede enviar confirmación de enviado por EMail a " . $enviainfo_to;
     } else {
         //	echo "Confirmaci�n enviado por EMail a ".$to." con exito"									;
     }

@@ -49,7 +49,7 @@
                             success: function(data) {
                                 if (data == 0) {
                                     alert('El código es incorrecto');
-                                    Recaptcha.reload();
+                                    showRecaptcha();
                                 } else if (data == 1) {
                                     $('#info').submit();
                                 }
