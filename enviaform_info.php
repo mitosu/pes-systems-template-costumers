@@ -10,7 +10,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <meta http-equiv="refresh" content="2; URL=info.php?mensaje=Información Enviado">
+        <!--<meta http-equiv="refresh" content="0; URL=info.php?mensaje=Información Enviado">-->
         <title>Mensaje enviado</title>
     </head>
     <body>
@@ -85,7 +85,7 @@
             echo "Mailer Error: " . $mail->ErrorInfo;
             exit;
         }
-
+        header('Location: info.php');
         echo "El Mensaje fue enviado correctamente";
         ?>
     </body>

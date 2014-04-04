@@ -30,6 +30,7 @@ define('_EMP_TEL',	'91 123 45 67');
 define('_EMP_MOTO',	'Su Empresa, S.L.  Mensajeros rapidos');
 define('_EMP_TITLE', '<title>DemoTrans | Mensajeros | Mensajerías | Courier | Transporte Urgente</title>');
 define('_EMP_MAILTO', '<a href="mailto:comercial@pes-systems.net">comercial@pes-systems.net</a>' );
+define('_EMP_MAIL_INFO', 'info@demotrans.es ');
 define('_EMP_LEMA',	'Mensajeros Rapidos');
 define('_EMP_LEMA_EMPRESA', 'Quienes somos');
 define('_EMP_SERV_NACIONAL', 'Servicio Nacional');
@@ -77,7 +78,7 @@ E-mail: <strong><a href="mailto:suempresa&#64;suempresa.es">suempresa&#64;suempr
 $empmailentrega_sender_name="info@demotrans.es"					; 
 
 #envia info
- $enviainfo_to = "miguel@pes-systems.net";
+ $enviainfo_to = "pruebas@pes-systems.net";
  //$enviainfo_to = "ventas@pes-systems.net";
  
  $enviainfo_from = "web@recogidas.biz";

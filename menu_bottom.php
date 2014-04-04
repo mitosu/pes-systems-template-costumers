@@ -4,6 +4,7 @@
     Author     : Mitosu
     Name: Miguel Angel Torres 
  */
+include ('config.php');
 
 echo '<div class="row">
                     <div class="col-md-1"></div>
@@ -29,7 +30,7 @@ echo'<div class="modal fade" id="condiciones" tabindex="-1" role="dialog" aria-l
         <h4 class="modal-title" id="condicionesLabel">Condiciones de Servicio</h4>
       </div>
       <div class="modal-body">
-        DemoTrans, S.L. , podrá modificar o suprimir cualquier servicio si entendiera su justificación. Esta se hará por escrito.<br/>
+        '._EMP_EMPRESA.' , podrá modificar o suprimir cualquier servicio si entendiera su justificación. Esta se hará por escrito.<br/>
         En los precios ofertados no está incluido el IVA, ni cualquier otro impuesto que pudiera recaer al destinatario o remitente.<br/>
         El sistema de cubicaje será el siguiente: Nacional/ Internacional Terrestre: Largo x alto x Ancho; dividido entre 3.000 Nacional / Internacional Aéreo: el establecido por las líneas aéreas.<br/>
         SEGUROS: DemoTrans, S.L. ignora el contenido y valor de la mercancía. Nuestra responsabilidad por los daños, pérdidas o averías que sufran las mercancías está limitada a lo establecido en la L.O.T.T. (Ley de Ordenación de los Transportes Terrestres). Seguro sin coste adicional para documentos. Para Paquetería, se aplicará un 10 % sobre portes en concepto de incremento de la cobertura legal de responsabilidad, que quedará limitada a 24,04 € / Kg. con un máximo de 1.803 € Seguro a todo riesgo: la prima del seguro es un 1,5% del valor declarado de la mercancía. Para asegurar dicha mercancía “a todo riesgo” por su valor, deberá reunir, los siguientes requisitos: declaración expresa de su contenido y valor; y pago y aceptación de dicha prima. El cargo mínimo es de 4,81 €.<br/>
@@ -37,7 +38,7 @@ echo'<div class="modal fade" id="condiciones" tabindex="-1" role="dialog" aria-l
         Los POD ( comprobantes de entrega) tienen un suplemento adicional de 3,91 € en Madrid y 6,91 € para servicios nacionales / internacionales.<br/>
         Quedan excluidos para el transporte de paquetes y objetos cuyo contenido sea contrario a la ley o cuyo contenido esté sujeto a requerimientos o disposiciones adicionales, asumiendo unicamente el remitente las responsabilidades que pudieran derivarse.<br/>
         Quedan expresamente excluidos: animales vivos y pieles de animales salvajes; metales, piedras preciosas, objetos de arte y antigüedades; documentos financieros negociables y dinero en efectivo. material radioactivo, explosivo y armas; mercancías peligrosas; plantas y mercancías perecederas.<br/>
-        DemoTrans, S.L. , no se responsabiliza de roturas o derrames de la mercancía transportada por insuficiencias de embalaje.<br/>
+        '._EMP_EMPRESA.', no se responsabiliza de roturas o derrames de la mercancía transportada por insuficiencias de embalaje.<br/>
         Revisión anual de precios: si no hubiera notificación por parte de nuestra empresa de nuevos precios y servicios o condiciones nuevas para el siguiente año, aplicaremos a la tarifa establecida el incremento del IPC ( índice de precios al consumo) anual.<br/>
         La relación contractual derivada del servicio de transporte queda sujeta a todo lo establecido en la L.O.T.T. ( Ley de Ordenación de los Transportes Terrestres), su Reglamento y demás disposiciones legales de desarrollo.<br/> 
       </div>
@@ -57,7 +58,7 @@ echo'<div class="modal fade" id="proteccion_datos" tabindex="-1" role="dialog" a
         <h4 class="modal-title" id="proteccionDatosLabel">Protección de Datos</h4>
       </div>
       <div class="modal-body">
-        En cumplimiento de la LOPD 15/99, le informamos de que la cumplimentación del presente formulario implica el consentimiento expreso a que los datos personales facilitados del interesado sean incorporados y tratados en ficheros automatizados, cuyo responsable es DemoTrans, S.L. con la finalidad de gestionar la relación comercial con sus clientes. Los derechos de acceso, rectificación, cancelación y oposición de sus datos de carácter personal podrán ser ejercidos poniéndose en contacto con nosotros en la dirección electrónica info@demotrans.es o en Orense, 12 28020 Madrid Teléfono: 91 123 45 67 Fax: 91 123 45 68 
+        En cumplimiento de la LOPD 15/99, le informamos de que la cumplimentación del presente formulario implica el consentimiento expreso a que los datos personales facilitados del interesado sean incorporados y tratados en ficheros automatizados, cuyo responsable es '._EMP_EMPRESA.' con la finalidad de gestionar la relación comercial con sus clientes. Los derechos de acceso, rectificación, cancelación y oposición de sus datos de carácter personal podrán ser ejercidos poniéndose en contacto con nosotros en la dirección electrónica '._EMP_MAIL.' o en '._EMP_CALLE._EMP_DP_CIUDAD.' Teléfono: '._EMP_TEL.' Fax: '._EMP_FAX.' 
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
@@ -77,10 +78,10 @@ echo'<div class="modal fade" id="aviso_legal" tabindex="-1" role="dialog" aria-l
       <div class="modal-body">
         En cumplimiento del artículo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y Comercio Electrónico, a continuación se exponen los datos identificativos de la empresa.<br/>
         <br/>
-        Denominación Social:  DemoTrans, S.L.<br/>
-        Nif / Cif:                      B12345678<br/>
-        Domicilio Social:           Orense, 12  28020 Madrid<br/>
-        Teléfono:                    91 123 45 67 <br/>
+        Denominación Social:  '._EMP_EMPRESA.'<br/>
+        Nif / Cif:                      '._EMP_CIF.'<br/>
+        Domicilio Social:           '._EMP_CALLE.'<br/>
+        Teléfono:                    '._EMP_TEL.' <br/>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
