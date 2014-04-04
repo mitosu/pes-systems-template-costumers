@@ -79,10 +79,24 @@ $empmailentrega_sender_name="info@demotrans.es"					;
 #envia info
  $enviainfo_to = "miguel@pes-systems.net";
  //$enviainfo_to = "ventas@pes-systems.net";
- $enviainfo_from = "web@pes-systems.net";
- $enviainfo_host     = "mail.pes-systems.net";
- $enviainfo_username = "ventas@pes-systems.net";
- $enviainfo_password = "912940184";
- $enviainfo__port    = "587";
+ /*
+ $enviainfo_from = "web@recogidas.biz";
+ $enviainfo_host     = "mail.recogidas.biz";
+ $enviainfo_username = "web@recogidas.biz";
+ $enviainfo_password = "916608490*PES";
+ $enviainfo__port    = 25;
+ */
+ 
+ 
+ $enviainfo_from = "clientes@recogidas.net";
+ $enviainfo_host     = "mail.recogidas.net";
+ $enviainfo_username = "clientes@recogidas.net";
+ $enviainfo_password = "1234567890";
+ $enviainfo__port    = 25;
+ 
+ 
+ 
+ 
+
  
 

@@ -8,7 +8,7 @@
         <META NAME="Author" CONTENT="">
         <META NAME="Keywords" CONTENT="">
         <META NAME="Description" CONTENT="">
-        <META HTTP-EQUIV=REFRESH CONTENT='2; URL=info.php?mensaje=Información Enviado'>
+        <!--<META HTTP-EQUIV=REFRESH CONTENT='2; URL=info.php?mensaje=Información Enviado'>-->
 
     </HEAD>
 
@@ -67,7 +67,7 @@
     $mail->Username = $enviainfo_username;             // SMTP account username
     $mail->Password = $enviainfo_password;             // SMTP account password
 
-    $mail->SetFrom($$enviainfo_from);
+    $mail->SetFrom($enviainfo_from);
 
 
     $mail->Subject = "Solicitude de Información desde la Web";
@@ -81,14 +81,21 @@
 
     $mail->AddAddress($enviainfo_to);
 
+    /*Mostrando variables*/
+        echo $enviainfo__port .'<br/>';
+        echo $enviainfo_from.'<br/>';
+        echo $enviainfo_host.'<br/>';
+        echo $enviainfo_username.'<br/>';
+        echo $enviainfo_password.'<br/>';
+    /*fin de mostrar variables*/
+    
     if (!$mail->Send()) {
-        echo "Mailer Error: " . $mail->ErrorInfo;
-        echo "No puede enviar confirmación de enviado por EMail a " . $enviainfo_to;
+        echo " Mailer Error: " . $mail->ErrorInfo;
+        echo " No puede enviar confirmación de enviado por EMail a " . $enviainfo_to;
     } else {
         //	echo "Confirmaci�n enviado por EMail a ".$to." con exito"									;
     }
     ?>
-
 
 
 <BODY>
