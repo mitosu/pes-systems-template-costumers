@@ -88,7 +88,7 @@
                 <div class="col-md-9 ">
                     <!--About us-->
                     <?php include ('info_text.php'); ?>
-                    <form id="info" role="form" action="enviainfo.php" method="GET">
+                    <form id="info" role="form" action="enviaform_info.php" method="GET">
                         <div class="row">
                             <div class="col-md-8">
                                 <div class="form-group">
@@ -140,19 +140,19 @@
                                 <h6><strong>Nos interesa servicios:</strong></h6>
                                 <div class="checkbox">
                                     <label>
-                                        <input type="checkbox" value="" name="locales">
+                                        <input type="checkbox" value="Locales" name="servicios[]">
                                         Locales
                                     </label>
                                 </div>
                                 <div class="checkbox">
                                     <label>
-                                        <input type="checkbox" value="" name="nacionales">
+                                        <input type="checkbox" value="Nacionales" name="servicios[]">
                                         Nacionales
                                     </label>
                                 </div>
                                 <div class="checkbox">
                                     <label>
-                                        <input type="checkbox" value="" name="internacionales">
+                                        <input type="checkbox" value="Internacionales" name="servicios[]">
                                         Internacionales
                                     </label>
                                 </div>

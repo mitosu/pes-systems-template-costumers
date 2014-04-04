@@ -1,3 +1,4 @@
+<?php include ('config.php'); ?>
 <!DOCTYPE html>
 <!--
 /* 
@@ -9,34 +10,78 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <meta http-equiv="refresh" content="2; URL=info.php?mensaje=Información Enviado">
         <title>Mensaje enviado</title>
     </head>
     <body>
         <?php
+
+        $empresa;
+        $direccion;
+        $dp;
+        $ciudad;
+        $nombre;
+        $telefono;
+        $fax;
+        $email;
+        $mensaje;
+        $msg;
+
         require("scripts/class.phpmailer.php");
+        if (isset($_GET)) {
+            $empresa = filter_input(INPUT_GET, 'empresa', FILTER_SANITIZE_SPECIAL_CHARS);
+            $direccion = filter_input(INPUT_GET, 'direccion', FILTER_SANITIZE_SPECIAL_CHARS);
+            $dp = filter_input(INPUT_GET, 'cpostal', FILTER_SANITIZE_SPECIAL_CHARS);
+            $ciudad = filter_input(INPUT_GET, 'ciudad', FILTER_SANITIZE_SPECIAL_CHARS);
+            $nombre = filter_input(INPUT_GET, 'contacto', FILTER_SANITIZE_SPECIAL_CHARS);
+            $telefono = filter_input(INPUT_GET, 'phone', FILTER_SANITIZE_SPECIAL_CHARS);
+            $fax = filter_input(INPUT_GET, 'fax', FILTER_SANITIZE_SPECIAL_CHARS);
+            $email = filter_input(INPUT_GET, 'email', FILTER_VALIDATE_EMAIL);
+            $mensaje = filter_input(INPUT_GET, 'mensaje', FILTER_SANITIZE_SPECIAL_CHARS);
+
+            $msg = "";
+            $msg .= "Empresa : " . $empresa . "<br/>";
+            $msg .= "Direcci&oacute;n : " . $direccion . "<br/>";
+            $msg .= "Dp-Ciudad: " . $dp . "<br/>";
+            $msg .= "Ciudad: " . $ciudad . "<br/>";
+            $msg .= "Tel.: " . $telefono . "<br/>";
+            $msg .= "Fax.: " . $fax . "<br/>";
+            $msg .= "Email: " . $email . "<br/>";
+            $msg .= "Servicios de interes :<br/>";
+
+            if (isset($_GET['servicios'])) {
+                foreach ($_GET['servicios'] as $value) {
+                    $msg.= $value . "<br/>";
+                }
+            }
+            $msg .="<br/>";
+            $msg .= "Mensaje : " . $mensaje;
+        }
+
+        $dDate = date('Y-m-d');
 
         $mail = new PHPMailer();
 
-        $mail->IsSMTP();    
-        $mail->Host = "mail.recogidas.biz";   
-        $mail->SMTPAuth = true;    
-        $mail->Username = "web@recogidas.biz";    
-        $mail->Password = "916608490*PES";    
-        $mail->Port = "25";    
+        $mail->IsSMTP();
+        $mail->Host = $enviainfo_host;
+        $mail->SMTPAuth = true;
+        $mail->Username = $enviainfo_username;
+        $mail->Password = $enviainfo_password;
+        $mail->Port = $enviainfo__port;
 
-        $mail->From = "web@recogidas.biz";    
-        $mail->FromName = "Pes Systems";   
-        $mail->AddAddress("miguel@pes-systems.net", "Mensaje Web");    
-        $mail->AddReplyTo("web@recogidas.biz", "Pes Systems"); 
+        $mail->From = $enviainfo_from;
+        $mail->FromName = "Pes Systems";
+        $mail->AddAddress($enviainfo_to, "Mensaje Web"); //Mail destino y además "máscara para la dirección".    
+        $mail->AddReplyTo("web@recogidas.biz", "Pes Systems"); //Permite hacer un reply a una dirección x.
 
         $mail->WordWrap = 50;    // set word wrap to 50 characters
         $mail->IsHTML(false);    // set email format to HTML
 
-        $mail->Subject = "Test SMTP";
-        $mail->Body = "Test SMTP Mensaje!";
+        $mail->Subject = "Solicitud de información";
+        $mail->msgHTML($msg);
 
         if (!$mail->Send()) {
-            echo "El mensaje no pudo ser enviadot. <p>";
+            echo "El mensaje no pudo ser enviado. <p>";
             echo "Mailer Error: " . $mail->ErrorInfo;
             exit;
         }
