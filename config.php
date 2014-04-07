@@ -55,8 +55,6 @@ define('_EMP_CIF','B12345678');
 define('_EMP_CALLE',	'Orense, 12');
 
 
-
-
 define('_EMP_MAPA', '<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.es/maps?f=q&amp;hl=es&amp;geocode=&amp;q=orense,+12+madrid&amp;sll=40.45063,-3.695146&amp;sspn=0.008066,0.019956&amp;ie=UTF8&amp;ll=40.457071,-3.691063&amp;spn=0.008066,0.019956&amp;z=14&amp;iwloc=addr&amp;om=1&amp;output=embed&amp;s=AARTsJqynj9rUC2__0x-xE0QEC2vwPK9cg"></iframe><br /><small><a href="http://maps.google.es/maps?f=q&amp;hl=es&amp;geocode=&amp;q=orense,+12+madrid&amp;sll=40.45063,-3.695146&amp;sspn=0.008066,0.019956&amp;ie=UTF8&amp;ll=40.457071,-3.691063&amp;spn=0.008066,0.019956&amp;z=14&amp;iwloc=addr&amp;om=1&amp;source=embed" style="color:#0000FF;text-align:left">Ver mapa más grande</a></small>');
 
 define('_EMP_DT', '<b>DemoTrans, S.L.<br> Orense, 12<br>
@@ -64,7 +62,8 @@ define('_EMP_DT', '<b>DemoTrans, S.L.<br> Orense, 12<br>
 Teléfono: &nbsp; &nbsp; &nbsp;91 123 45 67<br>
 FAX: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;91 123 45 68<br>
 E-mail: <strong><a href="mailto:suempresa&#64;suempresa.es">suempresa&#64;suempresa.es</a></strong>');
-
+//IP Cliente
+$ip = $_SERVER["REMOTE_ADDR"];
 
  $mailreco_to = "pruebas@pes-systems.net";
  $mailreco_from = "pruebas@pes-systems.net";
@@ -78,7 +77,7 @@ E-mail: <strong><a href="mailto:suempresa&#64;suempresa.es">suempresa&#64;suempr
 $empmailentrega_sender_name="info@demotrans.es"					; 
 
 #envia info
- $enviainfo_to = "miguel@pes-systems.net";
+ $enviainfo_to = "pruebas@pes-systems.net";
  //$enviainfo_to = "ventas@pes-systems.net";
  
  $enviainfo_from = "web@recogidas.biz";

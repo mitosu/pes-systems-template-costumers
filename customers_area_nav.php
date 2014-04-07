@@ -32,4 +32,3 @@ echo '<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
                 </div><!--/.navbar-collapse -->
             </div>
         </div>';
-?>

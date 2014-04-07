@@ -4,8 +4,6 @@
     Author     : Mitosu
     Name: Miguel Angel Torres 
  */
-include ('config.php');
-
 echo '<div class="row">
                     <div class="col-md-1"></div>
                     <div id="menu_bottom" class="col-md-10">

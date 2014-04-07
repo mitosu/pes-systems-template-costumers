@@ -8,9 +8,8 @@
       $mitime=$hora."H".$min ; //."'".$sec;
 	  
 include "configsql.php";
-$ip = $REMOTE_ADDR;
-$comando="insert into nbasewin (COMPANIA,DIR1,DP,CIUDAD,TEL1,FAX,CONTACTO1,EMAIL ,NOTAS,FECHA,HORA,IP,PROGRAMAS) values  ('". $empresa."','".$direccion."','".$dp."','".$ciudad."','".$telefono."','".$fax."','".$nombre."','".$email."','".$mensaje."','".$dfecha."','".$mitime."','".$ip."',
-'".$servicios.")" ;
+$ipclient = $ip;
+$comando="insert into nbasewin (COMPANIA,DIR1,DP,CIUDAD,TEL1,CONTACTO1,EMAIL ,NOTAS,FECHA,HORA,IP,PROGRAMAS) values  ('". $empresa."','".$direccion."','".$dp."','".$ciudad."','".$telefono."','".$nombre."','".$email."','".$mensaje."','".$dfecha."','".$mitime."','".$ipclient."','".$servicios."');" ;
 
 $result=mysql_query($comando, $connect);
 

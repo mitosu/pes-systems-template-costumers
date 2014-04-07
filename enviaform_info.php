@@ -81,7 +81,7 @@
 
         $mail->Subject = "Solicitud de información";
         $mail->msgHTML($msg);
-        include ('cargarnbasewin.php');
+        include ('carganbasewin.php');
 
         if (!$mail->Send()) {
             echo "El mensaje no pudo ser enviado. <p>";
@@ -89,7 +89,6 @@
             exit;
         }
         header('Location: info.php?mensaje="ok"');
-        echo "El Mensaje fue enviado correctamente";
         ?>
     </body>
 </html>
