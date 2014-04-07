@@ -1,4 +1,4 @@
-<?
+<?php
 include "config.php";
 
 $connect=mysql_connect($dbhost,$dbuname,$dbpass);
@@ -7,7 +7,7 @@ mysql_select_db( $dbname, $connect );
 
 
 if (!$connect){
-   echo "<p align='center'><font face='Arial' size='4' color='Green'><b>ERROR: Imposible establecer conexión con el servidor.</b></p>";
+   echo "<p align='center'><font face='Arial' size='4' color='Green'><b>ERROR: Imposible establecer conexiï¿½n con el servidor.</b></p>";
    exit;
 }
 if (! mysql_select_db($dbname, $connect)) {

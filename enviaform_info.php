@@ -15,7 +15,6 @@
     </head>
     <body>
         <?php
-
         $empresa;
         $direccion;
         $dp;
@@ -49,11 +48,14 @@
             $msg .= "Email: " . $email . "<br/>";
             $msg .= "Servicios de interes :<br/>";
 
+            $servicios = "";
+
             if (isset($_GET['servicios'])) {
                 foreach ($_GET['servicios'] as $value) {
-                    $msg.= $value . "<br/>";
+                    $servicios.= $value . "<br/>";
                 }
             }
+            $msg.=$servicios;
             $msg .="<br/>";
             $msg .= "Mensaje : " . $mensaje;
         }
@@ -61,7 +63,7 @@
         $dDate = date('Y-m-d');
 
         $mail = new PHPMailer();
-
+        $mail->CharSet = "UTF-8";
         $mail->IsSMTP();
         $mail->Host = $enviainfo_host;
         $mail->SMTPAuth = true;
@@ -79,13 +81,14 @@
 
         $mail->Subject = "Solicitud de información";
         $mail->msgHTML($msg);
+        include ('cargarnbasewin.php');
 
         if (!$mail->Send()) {
             echo "El mensaje no pudo ser enviado. <p>";
             echo "Mailer Error: " . $mail->ErrorInfo;
             exit;
         }
-        header('Location: info.php');
+        header('Location: info.php?mensaje="ok"');
         echo "El Mensaje fue enviado correctamente";
         ?>
     </body>

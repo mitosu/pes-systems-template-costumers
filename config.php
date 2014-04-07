@@ -78,7 +78,7 @@ E-mail: <strong><a href="mailto:suempresa&#64;suempresa.es">suempresa&#64;suempr
 $empmailentrega_sender_name="info@demotrans.es"					; 
 
 #envia info
- $enviainfo_to = "pruebas@pes-systems.net";
+ $enviainfo_to = "miguel@pes-systems.net";
  //$enviainfo_to = "ventas@pes-systems.net";
  
  $enviainfo_from = "web@recogidas.biz";
