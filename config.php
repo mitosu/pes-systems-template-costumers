@@ -77,7 +77,7 @@ $ip = $_SERVER["REMOTE_ADDR"];
 $empmailentrega_sender_name="info@demotrans.es"					; 
 
 #envia info
- $enviainfo_to = "pruebas@pes-systems.net";
+ $enviainfo_to = "miguel@pes-systems.net";
  //$enviainfo_to = "ventas@pes-systems.net";
  
  $enviainfo_from = "web@recogidas.biz";
