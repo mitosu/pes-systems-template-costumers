@@ -6,7 +6,7 @@
     Name: Miguel Angel Torres 
  */
 
-echo '<div class="links_footer col-md-3">
+echo '<div class="links_footer col-md-4">
                         <h4>Servicios</h4>
                            
                            <dl>
@@ -19,7 +19,7 @@ echo '<div class="links_footer col-md-3">
                                     <dd><a href="almacenaje.php">Servicio de Almacenaje</a></dd>
                             </dl>
                            <h6><span class="label label-default">Copyright</span></h6>
-                            Pes-Systems © Copyright 2014
+                            <img src="img/licencia.png" alt="copyrigth">
                             <p>
                             <a href="http://validator.w3.org/check?uri=referer"><img src="http://www.w3.org/Icons/valid-xhtml10-blue" alt="Valid XHTML 1.0 Strict" height="21" width="78" /></a>
                             </p>

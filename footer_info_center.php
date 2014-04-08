@@ -6,7 +6,7 @@
     Name: Miguel Angel Torres 
  */
 
-echo '<div class="links_footer col-md-3">
+echo '<div class="links_footer col-md-4">
                         <h4>Departamento Comercial</h4>
                         <dl>
                             <dt>Ventas</dt>

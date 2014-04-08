@@ -40,9 +40,9 @@
 
             $msg = "";
             $msg .= "Empresa : " . $empresa . "<br/>";
+            $msg .= "Persona de contacto: ".$nombre."<br/>";
             $msg .= "Direcci&oacute;n : " . $direccion . "<br/>";
-            $msg .= "Dp-Ciudad: " . $dp . "<br/>";
-            $msg .= "Ciudad: " . $ciudad . "<br/>";
+            $msg .= "Dp-Ciudad: " . $dp . " ".$ciudad."<br/>";
             $msg .= "Tel.: " . $telefono . "<br/>";
             $msg .= "Fax.: " . $fax . "<br/>";
             $msg .= "Email: " . $email . "<br/>";

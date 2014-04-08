@@ -16,6 +16,6 @@
                      //Recogidas
                      include ('footer_recogidas.php');
                     //Legal
-                     include ('footer_legal_info.php');
+                     //include ('footer_legal_info.php');
                   echo '</div>';
 

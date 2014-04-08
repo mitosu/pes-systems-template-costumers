@@ -8,8 +8,10 @@
         <meta charset="utf-8">
         <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
         <?php echo _EMP_TITLE;?>
-        <meta name="keywords" content="<?php echo _EMP_KEYWORDS?>">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Empresa de transporte en Madrid">
+        <meta name="keywords" content="<?php echo _EMP_KEYWORDS?>">
+        <meta name="Author" content="Pes Systems S.L. Software para triunfar. Tel.91 660 84 90">
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.js"></script>
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/stylepage.css">
