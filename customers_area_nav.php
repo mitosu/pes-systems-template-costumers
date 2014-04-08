@@ -17,15 +17,15 @@ echo '<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
                     <a class="navbar-brand" href="index.php">'._EMP_EMPRESA.'</a>
                 </div>
                 <div class="navbar-collapse collapse">
-                    <form class="navbar-form navbar-right" role="form">
+                    <form name="users" class="navbar-form navbar-right" role="form" action="validaus.php" method="POST">
                         <div id="text-zona-clientes" class="form-group">
                             <label for="usuario">Zona de Clientes</label>
                         </div>
                         <div class="form-group">
-                            <input id="usuario" type="text" placeholder="Usuario" class="form-control" data-toggle="popover" data-placement="bottom" data-content="Para acceder al area de Clientes por favor Ingrese sus credenciales">
+                            <input id="usuario" type="text" name="username" placeholder="Usuario" class="form-control" data-toggle="popover" data-placement="bottom" data-content="Para acceder al area de Clientes por favor Ingrese sus credenciales">
                         </div>
                         <div class="form-group">
-                           <input type="password" class="form-control" placeholder="Contraseña">
+                           <input type="password" name="userpass" class="form-control" placeholder="Contraseña">
                         </div>
                         <button type="submit" class="btn btn-success">Entrar</button>
                     </form>
