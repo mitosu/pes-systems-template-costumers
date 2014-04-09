@@ -20,6 +20,7 @@ include ('configsqlconnect.php');
         $xcodigo;
         $xpassword;
         $xempresa;
+        $xlevel;
         $usuario;
         $msgsystem;
 
@@ -32,9 +33,9 @@ include ('configsqlconnect.php');
             $query = $connect->query($consulta);
 
             if ($query->num_rows > 0) {
-                session_start();
+                //session
                 $row_result = $query->fetch_assoc();
-                $fila = $row_result['NIVEL'];
+                $xlevel = $row_result['NIVEL'];
                 $xcodigo = $row_result['CODIGO'];
                 $usuario = $row_result['DESCRIP'];
                 $xpassword = $row_result['PASSWORD'];
@@ -42,13 +43,16 @@ include ('configsqlconnect.php');
             } else {
                 $xpassword = 'no_user';
                 mysqli_close($connect);
-                exit();
+                //exit();
             }
             if ($query && ($pass == $xpassword) && ($xpassword <> 'no_user')) {
+                session_start();
+                $_SESSION['iduser'] = $xcodigo;
                 $_SESSION["user"] = $xusuario;
-                echo 'Estas on-line: ' . $xusuario;
+                $_SESSION['level'] = $xlevel;         
+                header('Location: index.php?login=1');
             }else{
-                echo 'Error: Usuario no registrado';
+                header('Location: index.php?login=0');
             }
         }
         ?>
