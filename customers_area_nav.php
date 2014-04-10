@@ -23,18 +23,6 @@ echo '<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
                 } else {
                     include ('menu_user.php');
                 }
-
-/*
-                if (!isset($_GET['login'])) {
-                    include ('loginformtop.php');
-                } else if (isset($_GET['login'])) {
-                    if ($_GET['login'] === "0") {
-                        echo '<span class="label label-warning">Datos Incorrectos</span>';
-                        include ('loginformtop.php');
-                    } else {
-                        include ('menu_user.php');
-                    }
-                }*/
                 echo '</div><!--/.navbar-collapse -->
                             </div>
                         </div>';

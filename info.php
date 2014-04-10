@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <?php require_once ('recaptchalib.php'); ?>
 <!DOCTYPE html>
 <?php include ('config.php'); ?>

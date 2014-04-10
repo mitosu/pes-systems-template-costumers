@@ -29,11 +29,9 @@ include ('configsqlconnect.php');
             $pass = filter_input(INPUT_POST, 'userpass', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
             $xusuario = trim(strtoupper($usuario));
             $consulta = "select PASSWORD,DESCRIP,NIVEL,CODIGO,COMPANIA from t4 where DESCRIP='" .$xusuario . "'";
-            //$consulta = "select PASSWORD,DESCRIP,NIVEL,CODIGO,COMPANIA from t4 where password='" . $xpassword . "'";
             $query = $connect->query($consulta);
 
-            if ($query->num_rows > 0) {
-                //session
+            if ($query->num_rows === 1) {
                 $row_result = $query->fetch_assoc();
                 $xlevel = $row_result['NIVEL'];
                 $xcodigo = $row_result['CODIGO'];
@@ -42,10 +40,12 @@ include ('configsqlconnect.php');
                 $xempresa = $row_result['COMPANIA'];
             } else {
                 $xpassword = 'no_user';
-                mysqli_close($connect);
-                //exit();
+                $connect->close();
             }
+            
             if ($query && ($pass == $xpassword) && ($xpassword <> 'no_user')) {
+                $query->close();
+                $connect->close();
                 session_start();
                 $_SESSION['iduser'] = $xcodigo;
                 $_SESSION["user"] = $xusuario;
