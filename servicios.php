@@ -10,7 +10,7 @@
     <head>
         <meta charset="utf-8">
         <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
-        <?php echo _EMP_TITLE;?>
+        <title><?php echo _EMP_TITLE; ?></title>
         <meta name="keywords" content="<?php echo _EMP_KEYWORDS?>">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.js"></script>
@@ -48,6 +48,8 @@
             <div class="row">
                 <div class="col-md-9">
                     <!--About us-->
+                    <?php echo _TITULO_SERVICIOS_MAIN?>
+                    <?php include ('servicio_local.php');?>
                     <?php include ('servicio_nacional.php');?>
                     <?php include ('servicio_insular.php');?>
                     <?php include ('servicio_internacional.php');?>

@@ -50,7 +50,7 @@ include ('configsqlconnect.php');
                 $_SESSION['iduser'] = $xcodigo;
                 $_SESSION["user"] = $xusuario;
                 $_SESSION['level'] = $xlevel;         
-                header('Location: index.php?login=1');
+                header('Location: index.php');
             }else{
                 header('Location: index.php?login=0');
             }

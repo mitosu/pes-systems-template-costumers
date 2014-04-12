@@ -3,21 +3,21 @@
 date_default_timezone_set('Europe/Madrid');
 $mashours=0;   //apartir 27.3.2011
 
-/*
+
 # Datos MySql
 $dbhost = "www.recogidas.biz";
 $dbuname= "recogidasbiz" ;
 $dbpass = "Recobiz2014";
 $dbname = "recogidasbiz";
- * 
- */
 
+
+/*
 # Datos MySql
-
 $dbhost = "localhost";
 $dbuname= "root" ;
 $dbpass = "";
 $dbname = "recogidasbiz";
+ */
  
 
 #Datos recaptcha
@@ -31,7 +31,7 @@ define('_EMP_KEYWORDS', 'transporte madrid, empresa transporte madrid, mensajeri
 # Datos Cliente
 define('_EMP_TEL',	'91 123 45 67');
 define('_EMP_MOTO',	'Su Empresa, S.L.  Mensajeros rapidos');
-define('_EMP_TITLE', '<title>DemoTrans | Mensajeros | Mensajerías | Courier | Transporte Urgente</title>');
+define('_EMP_TITLE', 'DemoTrans | Mensajeros | Mensajerías | Courier | Transporte Urgente');
 define('_EMP_MAILTO', '<a href="mailto:comercial@pes-systems.net">comercial@pes-systems.net</a>' );
 define('_EMP_MAIL_INFO', 'info@demotrans.es ');
 define('_EMP_LEMA',	'Mensajeros Rapidos');
@@ -50,6 +50,8 @@ define('_EMP_FAX',	'91 123 45 68');
 define('_EMP_EMPRESA','DemoTrans, S.L.');
 define('_TEL_COMERCIAL', '91 660 84 90');
 define('_TEL_RECOGIDAS', '91 000 00 00');
+define('_TITULO_SERVICIOS_MAIN', '<h3> <span class="label label-primary">SERVICIOS</span></h3>');
+define('_EMP_SERV_LOCAL', 'Servicio Local');
 define('_EMP_MAIL','info&#64;demotrans.es');
 define('_EMAIL_COMERCIAL', '<a href="mailto:comercial@pes-systems.net">comercial@pes-systems.net</a>');
 define('_EMAIL_RECOGIDAS', '<a href="mailto:recogidas@pes-systems.net">recogidas@pes-systems.net</a>');

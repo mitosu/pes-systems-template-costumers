@@ -1,14 +1,19 @@
 <?php
-
-/* 
-    Created on : 09-Abril-2014, 10:23:50
-    Author     : Mitosu
-    Name: Miguel Angel Torres 
+/*
+  Created on : 09-Abril-2014, 10:23:50
+  Author     : Mitosu
+  Name: Miguel Angel Torres
  */
 
-echo '<form name="users" class="navbar-form navbar-right" role="form" action="validaus.php" method="POST">
+echo '<form name="users" class="navbar-form navbar-right" role="form" action="validalogon.php" method="POST">
                         <div id="text-zona-clientes" class="form-group">
-                            <label for="usuario">Zona de Clientes</label>
+                            <label for="usuario">';
+                            if (isset($_GET["login"])) {
+                                if ($_GET["login"] == 0) {
+                                    echo '<span class="label label-danger">Datos Incorrectos</span>';
+                                }
+                            }
+echo ' Zona de Clientes</label>
                         </div>
                         <div class="form-group">
                             <input id="usuario" type="text" name="username" placeholder="Usuario" class="form-control" data-toggle="popover" data-placement="bottom" data-content="Para acceder al area de Clientes por favor Ingrese sus credenciales">
@@ -18,4 +23,3 @@ echo '<form name="users" class="navbar-form navbar-right" role="form" action="va
                         </div>
                         <button type="submit" class="btn btn-success">Entrar</button>
                     </form>';
-

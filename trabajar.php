@@ -10,7 +10,7 @@
     <head>
         <meta charset="utf-8">
         <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
-        <?php echo _EMP_TITLE; ?>
+        <title><?php echo _EMP_TITLE; ?></title>
         <meta name="keywords" content="<?php echo _EMP_KEYWORDS ?>">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="js/jquery-1.8.2.min.js"></script>
@@ -18,9 +18,6 @@
         <script src="js/jquery.validationEngine.js"></script>
         <script type="text/javascript" src="http://www.google.com/recaptcha/api/js/recaptcha_ajax.js"></script>
         <link rel="stylesheet" href="css/validationEngine.jquery.css">
-        <script>
-
-        </script>
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/stylepage.css">
         <style>
@@ -51,7 +48,7 @@
                         }
                 );
             }
-            //Comprobación
+            
             function captcha() {
                 var v1 = $("input#recaptcha_challenge_field").val();
                 var v2 = $("input#recaptcha_response_field").val();
@@ -74,7 +71,6 @@
                     }
                 });
             }
-
         </script>
     </head>
     <body>
@@ -83,10 +79,9 @@
         <![endif]-->
         <!--customers_area-->
         <?php include('customers_area_nav.php'); ?>
-        <div id="contenido" class="container"><!--Contenido-->
+        <div id="contenido" class="container">
             <!--header.php-->
             <?php include ('header.php'); ?>
-
             <!--Cotenido Cuerpo-->
             <div class="row">
                 <div class="col-md-9">

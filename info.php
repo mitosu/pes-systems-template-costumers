@@ -1,7 +1,6 @@
 <?php
     session_start();
 ?>
-<?php require_once ('recaptchalib.php'); ?>
 <!DOCTYPE html>
 <?php include ('config.php'); ?>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -11,7 +10,7 @@
     <head>
         <meta charset="utf-8">
         <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
-        <?php echo _EMP_TITLE; ?>
+        <title><?php echo _EMP_TITLE; ?></title>
         <meta name="keywords" content="<?php echo _EMP_KEYWORDS ?>">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="js/jquery-1.8.2.min.js"></script>
@@ -19,6 +18,18 @@
         <script src="js/jquery.validationEngine.js" type="text/javascript" charset="utf-8"></script>
         <script type="text/javascript" src="http://www.google.com/recaptcha/api/js/recaptcha_ajax.js"></script>
         <link rel="stylesheet" href="css/validationEngine.jquery.css" type="text/css"/>
+        <script type="text/javascript" src="http://www.google.com/recaptcha/api/js/recaptcha_ajax.js"></script>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/stylepage.css">
+        <style>
+            body {
+                padding-top: 50px;
+                padding-bottom: 20px;
+            }
+        </style>
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
         <script>
             $(document).ready(function() {
                 $('#info').validationEngine();
@@ -37,7 +48,7 @@
                         }
                 );
             }
-            //Comprobación
+
             function captcha() {
                 var v1 = $("input#recaptcha_challenge_field").val();
                 var v2 = $("input#recaptcha_response_field").val();
@@ -60,33 +71,17 @@
                     }
                 });
             }
-
         </script>
-        <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.js"></script>-->
-        <script type="text/javascript" src="http://www.google.com/recaptcha/api/js/recaptcha_ajax.js"></script>
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/stylepage.css">
-        <style>
-            body {
-                padding-top: 50px;
-                padding-bottom: 20px;
-            }
-        </style>
-        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="css/main.css">
-        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-
     </head>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         <!--customers_area-->
-<?php include('customers_area_nav.php'); ?>
-        <div id="contenido" class="container"><!--Contenido-->
+        <?php include('customers_area_nav.php'); ?>
+        <div id="contenido" class="container">
             <!--header.php-->
-<?php include ('header.php'); ?>
-
+            <?php include ('header.php'); ?>
             <!--Cotenido Cuerpo-->
             <div class="row">
                 <div class="col-md-9 ">
@@ -96,7 +91,7 @@
                         echo '<h5><span class="label label-success">Mensaje enviado con exito!</span></h5>';
                     }
                     ?>
-<?php include ('info_text.php'); ?>
+                    <?php include ('info_text.php'); ?>
                     <form id="info" role="form" action="enviaform_info.php" method="GET">
                         <div class="row">
                             <div class="col-md-8">
@@ -181,7 +176,7 @@
                 </div>
                 <div class="col-md-3">
                     <!--Our locations-->
-<?php include ('destinos.php'); ?>
+                    <?php include ('destinos.php'); ?>
                     <!--Newsletters-->
                 </div>
             </div>
@@ -195,7 +190,7 @@
 
             <footer>
                 <!--Menu Bottom-->
-<?php include ('footer.php'); ?>
+                <?php include ('footer.php'); ?>
             </footer>
             <!--</div>--> <!-- /container -->
             <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.js"><\/script>')</script>

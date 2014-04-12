@@ -10,7 +10,7 @@ session_start();
     <head>
         <meta charset="utf-8">
         <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
-        <?php echo _EMP_TITLE;?>
+        <title><?php echo _EMP_TITLE; ?></title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="Empresa de transporte en Madrid">
         <meta name="keywords" content="<?php echo _EMP_KEYWORDS?>">
